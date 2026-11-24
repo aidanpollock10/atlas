@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Atlas
 
-## Getting Started
+An interactive world-economy explorer — browse economic indicators, compare countries, and model global shocks on a live 3D globe.
 
-First, run the development server:
+**Live:** _link coming soon_
+
+![Screenshot](docs/screenshot.png)
+
+---
+
+## Features
+
+- **Interactive 3D globe** — WebGL globe with country polygons, click-to-select, auto-rotation, and a custom starfield background
+- **Map layers** — switch between GDP per capita, GDP growth, inflation, unemployment, and debt-to-GDP coloring
+- **Country profiles** — slide-in panel with key stats (GDP, growth, inflation, unemployment, debt/GDP, current account), 30-year GDP history chart, FX rates, and top-5 trade partners
+- **Trade flows** — bilateral import/export partners with value and share breakdowns (BACI 2023 data)
+- **Rankings** — sortable table of all countries by any economic indicator
+- **Compare** — side-by-side comparison of up to 4 countries with overlaid line charts
+- **Scenario simulator** — model four global shocks (oil price, US interest rates, China growth, USD strength), see the globe recolor live on a diverging scale, and get a top-10 hurt/helped country ranking with one-line explanations
+
+---
+
+## Tech stack
+
+| Layer | Library / Tool |
+|---|---|
+| Framework | Next.js 15 (App Router, static export) |
+| Language | TypeScript |
+| Styling | Tailwind CSS v4 (PostCSS plugin) |
+| Globe | globe.gl + world-atlas TopoJSON |
+| Charts | Recharts |
+| Font | Geist (Vercel) |
+| Data scripts | tsx (Node) |
+
+---
+
+## Data sources
+
+| Data | Source |
+|---|---|
+| GDP, growth, inflation, unemployment, debt/GDP, current account | [IMF World Economic Outlook DataMapper](https://www.imf.org/external/datamapper/) (primary, 2026 estimates) |
+| Same indicators (fallback + history) | [World Bank Open Data](https://data.worldbank.org/) |
+| Country metadata (names, regions, flags, coordinates) | [REST Countries](https://restcountries.com/) |
+| FX rates (10-year monthly history) | [Frankfurter / ECB](https://www.frankfurter.app/) + World Bank PA.NUS.FCRF |
+| Bilateral trade flows | [OEC / BACI HS92](https://oec.world/) via OEC Tesseract API (2023) |
+
+All sources are free and require no API key.
+
+---
+
+## Running locally
 
 ```bash
+# Install dependencies
+npm install
+
+# Start the dev server (http://localhost:3000)
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Production build
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Refreshing data
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The JSON files in `data/` are pre-built and committed. To regenerate them:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run fetch-data      # IMF + World Bank indicators → data/countries.json
+npm run fetch-fx        # ECB FX history → data/fx.json
+npm run fetch-trade     # OEC bilateral trade → data/trade.json
+npm run generate-insights  # Algorithmic insights → data/insights.json
+```
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Fetching takes ~2–3 minutes (rate-limited World Bank calls). No API keys required.
