@@ -12,6 +12,10 @@ interface GlobeProps {
   onSelectCountry: (country: Country) => void;
   onClose: () => void;
   flyToRef: MutableRefObject<((country: Country) => void) | null>;
+  /** When provided, globe recolors by scenario impact instead of a layer. */
+  scenarioImpacts?: Record<string, number>;
+  /** Hide the layer switcher (used on scenarios page). */
+  scenarioMode?: boolean;
 }
 
 // ── Layer types ───────────────────────────────────────────────────────────────
@@ -198,6 +202,37 @@ const LEGENDS: Record<GlobeLayer, LegendItem[]> = {
   ],
 };
 
+// ── Scenario color helper ─────────────────────────────────────────────────────
+
+function scenarioImpactColor(pp: number): string {
+  if (pp >  3.0) return 'rgba(20,180,80,0.85)';
+  if (pp >  1.5) return 'rgba(40,160,70,0.75)';
+  if (pp >  0.5) return 'rgba(60,150,80,0.65)';
+  if (pp >  0.1) return 'rgba(80,130,80,0.55)';
+  if (pp > -0.1) return 'rgba(90,90,90,0.50)';
+  if (pp > -0.5) return 'rgba(140,80,60,0.55)';
+  if (pp > -1.5) return 'rgba(180,55,40,0.65)';
+  if (pp > -3.0) return 'rgba(205,35,25,0.75)';
+  return 'rgba(220,15,15,0.85)';
+}
+
+function getPolygonCapColor(
+  d: unknown,
+  hovered: unknown,
+  layer: GlobeLayer,
+  scenarioImpacts: Record<string, number> | null
+): string {
+  if (d === hovered) return HOVER;
+  if (scenarioImpacts) {
+    const c = getCountryFromFeature(d);
+    if (!c) return NO_COUNTRY;
+    const pp = scenarioImpacts[c.code];
+    if (pp === undefined) return NO_DATA;
+    return scenarioImpactColor(pp);
+  }
+  return getCapColorForLayer(d, hovered, layer);
+}
+
 // ── Component ────────────────────────────────────────────────────────────────
 
 export default function GlobeComponent({
@@ -205,6 +240,8 @@ export default function GlobeComponent({
   onSelectCountry,
   onClose,
   flyToRef,
+  scenarioImpacts,
+  scenarioMode = false,
 }: GlobeProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const globeRef     = useRef<GlobeInstance | null>(null);
@@ -218,6 +255,7 @@ export default function GlobeComponent({
   // ── Layer state ──────────────────────────────────────────────────────────
   const [layer, setLayer] = useState<GlobeLayer>('gdpPerCapita');
   const layerRef = useRef<GlobeLayer>('gdpPerCapita');
+  const scenarioImpactsRef = useRef<Record<string, number> | null>(null);
 
   // ── Rotation state ──────────────────────────────────────────────────────
   const [autoRotateEnabled, setAutoRotateEnabled] = useState(true);
@@ -229,13 +267,21 @@ export default function GlobeComponent({
   useEffect(() => { autoRotateEnabledRef.current = autoRotateEnabled; }, [autoRotateEnabled]);
   useEffect(() => { selectedCountryRef.current = selectedCountry; }, [selectedCountry]);
 
-  // Update layer ref + redraw globe colors when layer changes
+  // Update layer ref + redraw globe colors when layer or scenario changes
   useEffect(() => {
     layerRef.current = layer;
     const globe = globeRef.current;
     if (!globe) return;
-    globe.polygonCapColor((d) => getCapColorForLayer(d, hoveredRef.current, layerRef.current));
+    globe.polygonCapColor((d) => getPolygonCapColor(d, hoveredRef.current, layerRef.current, scenarioImpactsRef.current));
   }, [layer]);
+
+  // Re-color globe whenever scenarioImpacts updates (live slider feedback)
+  useEffect(() => {
+    scenarioImpactsRef.current = scenarioImpacts ?? null;
+    const globe = globeRef.current;
+    if (!globe) return;
+    globe.polygonCapColor((d) => getPolygonCapColor(d, hoveredRef.current, layerRef.current, scenarioImpactsRef.current));
+  }, [scenarioImpacts]);
 
   // Update trade arcs when selected country changes
   useEffect(() => {
@@ -366,7 +412,7 @@ export default function GlobeComponent({
         .atmosphereAltitude(0.15)
         .polygonsData(features)
         .polygonAltitude((d) => (d === hoveredRef.current ? 0.06 : 0.01))
-        .polygonCapColor((d) => getCapColorForLayer(d, hoveredRef.current, layerRef.current))
+        .polygonCapColor((d) => getPolygonCapColor(d, hoveredRef.current, layerRef.current, scenarioImpactsRef.current))
         .polygonSideColor(() => 'rgba(0,80,180,0.15)')
         .polygonStrokeColor(() => '#1a2a3a')
         .polygonLabel(() => '')
@@ -374,7 +420,7 @@ export default function GlobeComponent({
           hoveredRef.current = d;
           globe
             .polygonAltitude((p) => (p === hoveredRef.current ? 0.06 : 0.01))
-            .polygonCapColor((p) => getCapColorForLayer(p, hoveredRef.current, layerRef.current));
+            .polygonCapColor((p) => getPolygonCapColor(p, hoveredRef.current, layerRef.current, scenarioImpactsRef.current));
         })
         .onPolygonClick((d) => {
           const country = getCountryFromFeature(d);
@@ -501,43 +547,64 @@ export default function GlobeComponent({
       <CountryPanel country={selectedCountry} onClose={onClose} />
 
       {/* Layer switcher — top-left, below nav bar */}
-      <div
-        className="absolute left-4 z-10 rounded-xl px-3 py-2.5"
-        style={{ top: '72px', background: 'rgba(10,20,40,0.88)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(8px)' }}
-      >
-        <div className="text-gray-500 text-xs font-semibold uppercase tracking-wider mb-2">Layer</div>
-        <div className="grid grid-cols-2 gap-1">
-          {(Object.keys(LAYER_LABELS) as GlobeLayer[]).map((l) => (
-            <button
-              key={l}
-              onClick={() => setLayer(l)}
-              className="text-xs px-2 py-1 rounded-md transition-colors text-left whitespace-nowrap"
-              style={{
-                background: layer === l ? 'rgba(58,134,255,0.25)' : 'rgba(255,255,255,0.04)',
-                border: `1px solid ${layer === l ? 'rgba(58,134,255,0.5)' : 'rgba(255,255,255,0.08)'}`,
-                color: layer === l ? '#93c5fd' : '#9ca3af',
-              }}
-            >
-              {LAYER_LABELS[l]}
-            </button>
-          ))}
+      {!scenarioMode && (
+        <div
+          className="absolute left-4 z-10 rounded-xl px-3 py-2.5"
+          style={{ top: '72px', background: 'rgba(10,20,40,0.88)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(8px)' }}
+        >
+          <div className="text-gray-500 text-xs font-semibold uppercase tracking-wider mb-2">Layer</div>
+          <div className="grid grid-cols-2 gap-1">
+            {(Object.keys(LAYER_LABELS) as GlobeLayer[]).map((l) => (
+              <button
+                key={l}
+                onClick={() => setLayer(l)}
+                className="text-xs px-2 py-1 rounded-md transition-colors text-left whitespace-nowrap"
+                style={{
+                  background: layer === l ? 'rgba(58,134,255,0.25)' : 'rgba(255,255,255,0.04)',
+                  border: `1px solid ${layer === l ? 'rgba(58,134,255,0.5)' : 'rgba(255,255,255,0.08)'}`,
+                  color: layer === l ? '#93c5fd' : '#9ca3af',
+                }}
+              >
+                {LAYER_LABELS[l]}
+              </button>
+            ))}
+          </div>
         </div>
-      </div>
+      )}
 
-      {/* Legend — bottom-left, reflects current layer */}
-      <div
-        className="absolute bottom-6 left-6 z-10 rounded-lg px-3 py-2 text-xs"
-        style={{ background: 'rgba(10,20,40,0.85)', border: '1px solid rgba(255,255,255,0.1)' }}
-      >
-        <div className="text-gray-400 mb-2 font-semibold uppercase tracking-wider text-xs">
-          {LAYER_LABELS[layer]}
+      {/* Legend — bottom-left */}
+      {scenarioMode ? (
+        <div
+          className="absolute bottom-6 left-6 z-10 rounded-lg px-3 py-2 text-xs"
+          style={{ background: 'rgba(10,20,40,0.85)', border: '1px solid rgba(255,255,255,0.1)' }}
+        >
+          <div className="text-gray-400 mb-2 font-semibold uppercase tracking-wider text-xs">GDP Growth Impact</div>
+          <div className="space-y-1">
+            {[
+              { color: 'rgba(20,180,80,0.85)',  label: '> +3 pp (strong boost)' },
+              { color: 'rgba(60,150,80,0.65)',  label: '+0.5–3 pp (moderate boost)' },
+              { color: 'rgba(90,90,90,0.50)',   label: '±0.1 pp (neutral)' },
+              { color: 'rgba(180,55,40,0.65)',  label: '−0.5–3 pp (moderate hit)' },
+              { color: 'rgba(220,15,15,0.85)',  label: '< −3 pp (severe hit)' },
+              { color: 'rgba(50,80,120,0.80)',  label: 'No GDP data' },
+            ].map(item => <LegendRow key={item.label} color={item.color} label={item.label} />)}
+          </div>
         </div>
-        <div className="space-y-1">
-          {LEGENDS[layer].map((item) => (
-            <LegendRow key={item.label} color={item.color} label={item.label} />
-          ))}
+      ) : (
+        <div
+          className="absolute bottom-6 left-6 z-10 rounded-lg px-3 py-2 text-xs"
+          style={{ background: 'rgba(10,20,40,0.85)', border: '1px solid rgba(255,255,255,0.1)' }}
+        >
+          <div className="text-gray-400 mb-2 font-semibold uppercase tracking-wider text-xs">
+            {LAYER_LABELS[layer]}
+          </div>
+          <div className="space-y-1">
+            {LEGENDS[layer].map((item) => (
+              <LegendRow key={item.label} color={item.color} label={item.label} />
+            ))}
+          </div>
         </div>
-      </div>
+      )}
 
       {/* Bottom-right: rotation toggle + hint */}
       <div className="absolute bottom-6 right-6 z-10 flex flex-col items-end gap-2">

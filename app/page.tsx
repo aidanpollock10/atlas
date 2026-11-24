@@ -56,6 +56,7 @@ export default function Home() {
         <div className="hidden sm:flex items-center gap-2 flex-shrink-0">
           <NavLink href="/rankings">Rankings</NavLink>
           <NavLink href="/compare">Compare</NavLink>
+          <NavLink href="/scenarios">Scenarios</NavLink>
         </div>
       </div>
 
