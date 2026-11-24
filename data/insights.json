@@ -1,0 +1,1795 @@
+{
+  "AF": {
+    "strengths": [],
+    "risks": [
+      "High unemployment at 13.4%, above the world average"
+    ],
+    "didYouKnow": "Unemployment is more than double the Asia regional average"
+  },
+  "AL": {
+    "overview": "Albania has a $31 billion economy. Its per-capita income of $12,998 is below the world average. The economy is currently growing solidly, with GDP growth of +3.8%.",
+    "strengths": [
+      "Above-average GDP growth of +3.8%"
+    ],
+    "risks": [
+      "High unemployment at 10.9%, above the world average"
+    ],
+    "didYouKnow": "GDP has grown 8× since 1996"
+  },
+  "DZ": {
+    "overview": "Algeria has a $287 billion economy. Its per-capita income of $6,051 is below the world average. The economy is currently growing solidly, with GDP growth of +3.8%.",
+    "strengths": [
+      "Above-average GDP growth of +3.8%",
+      "Price stability with inflation at 1.4%"
+    ],
+    "risks": [
+      "High unemployment at 11.6%, above the world average"
+    ],
+    "didYouKnow": "GDP has grown 6× since 1996"
+  },
+  "AD": {
+    "overview": "Andorra has a $5 billion economy. With a per-capita income of $54,292, it sits above the world average. The economy is currently growing solidly, with GDP growth of +3.9%.",
+    "strengths": [
+      "Above-average GDP growth of +3.9%",
+      "Above-average per-capita income of $54,292"
+    ],
+    "risks": []
+  },
+  "AO": {
+    "overview": "Angola has a $122 billion economy. Despite its total output, per-capita income of $3,129 remains far below the world average. The economy is currently growing solidly, with GDP growth of +3.1%.",
+    "strengths": [],
+    "risks": [
+      "Very high inflation of 20.2%, sharply eroding purchasing power",
+      "High unemployment at 14.1%, above the world average",
+      "Very low per-capita income — 16% of the world average"
+    ],
+    "didYouKnow": "GDP has grown 14× since 1996"
+  },
+  "AG": {
+    "overview": "Antigua and Barbuda has a $2 billion economy. Its per-capita income of $24,819 is above the world average. The economy is currently growing solidly, with GDP growth of +5.0%.",
+    "strengths": [
+      "Strong GDP growth at +5.0%",
+      "Price stability with inflation at 1.4%"
+    ],
+    "risks": []
+  },
+  "AR": {
+    "overview": "Argentina has a $683 billion economy, ranked #24 globally. Its per-capita income of $14,898 is below the world average. The economy is currently growing solidly, with GDP growth of +4.4%.",
+    "strengths": [
+      "Strong GDP growth at +4.4%"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has more than doubled since 2006"
+  },
+  "AM": {
+    "overview": "Armenia has a $29 billion economy. Its per-capita income of $9,474 is below the world average. The economy is currently expanding rapidly, with GDP growth of +7.2%.",
+    "strengths": [
+      "Exceptional GDP growth of +7.2%"
+    ],
+    "risks": [
+      "High unemployment at 12.9%, above the world average"
+    ],
+    "didYouKnow": "GDP has grown 16× since 1996"
+  },
+  "AU": {
+    "overview": "Australia has a $1.8 trillion economy, ranked #15 globally by GDP. Per-capita income of $65,130 is 3.3× the world average, placing it among the wealthiest nations. The economy is currently growing steadily, with GDP growth of +1.4%.",
+    "strengths": [
+      "Low unemployment rate of 4.1%",
+      "Very high per-capita income — 3.3× the world average"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has more than doubled since 2006"
+  },
+  "AT": {
+    "overview": "Austria has a $579 billion economy, ranked #28 globally. Per-capita income of $62,930 is 3.2× the world average, placing it among the wealthiest nations. The economy is currently growing modestly, with GDP growth of +0.6%.",
+    "strengths": [
+      "Very high per-capita income — 3.2× the world average"
+    ],
+    "risks": []
+  },
+  "AZ": {
+    "overview": "Azerbaijan has a $76 billion economy. Its per-capita income of $7,411 is below the world average. The economy is currently growing steadily, with GDP growth of +1.4%.",
+    "strengths": [],
+    "risks": [
+      "Elevated inflation at 5.6%"
+    ],
+    "didYouKnow": "GDP has grown 23× since 1996"
+  },
+  "BH": {
+    "overview": "Bahrain has a $49 billion economy. With a per-capita income of $30,597, it sits above the world average. The economy is currently growing solidly, with GDP growth of +3.5%.",
+    "strengths": [
+      "Near-full employment — unemployment at just 1.1%",
+      "Above-average per-capita income of $30,597"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has grown 7× since 1996"
+  },
+  "BD": {
+    "overview": "Bangladesh has a $456 billion economy. Despite its total output, per-capita income of $2,597 remains far below the world average. The economy is currently growing solidly, with GDP growth of +3.5%.",
+    "strengths": [
+      "Low unemployment rate of 3.8%"
+    ],
+    "risks": [
+      "Elevated inflation at 8.8%",
+      "Very low per-capita income — 13% of the world average"
+    ],
+    "didYouKnow": "GDP has grown 10× since 1996"
+  },
+  "BB": {
+    "overview": "Barbados has a $8 billion economy. Its per-capita income of $28,365 is above the world average. The economy is currently growing steadily, with GDP growth of +2.7%.",
+    "strengths": [
+      "Price stability with inflation at 0.8%"
+    ],
+    "risks": []
+  },
+  "BY": {
+    "overview": "Belarus has a $93 billion economy. Its per-capita income of $10,279 is below the world average. The economy is currently growing steadily, with GDP growth of +1.3%.",
+    "strengths": [
+      "Low unemployment rate of 3.4%"
+    ],
+    "risks": [
+      "Elevated inflation at 6.6%"
+    ],
+    "didYouKnow": "GDP has grown 5× since 1996"
+  },
+  "BE": {
+    "overview": "Belgium has a $725 billion economy, ranked #22 globally. Per-capita income of $60,750 is 3.1× the world average, placing it among the wealthiest nations. The economy is currently growing modestly, with GDP growth of +1.0%.",
+    "strengths": [
+      "Very high per-capita income — 3.1× the world average"
+    ],
+    "risks": []
+  },
+  "BZ": {
+    "overview": "Belize has a $3 billion economy. Its per-capita income of $7,865 is below the world average. The economy is currently growing steadily, with GDP growth of +2.7%.",
+    "strengths": [
+      "Price stability with inflation at 1.1%"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has more than doubled since 2006"
+  },
+  "BJ": {
+    "overview": "Benin has a $25 billion economy. Despite its total output, per-capita income of $1,658 remains far below the world average. The economy is currently expanding rapidly, with GDP growth of +8.1%.",
+    "strengths": [
+      "Exceptional GDP growth of +8.1%",
+      "Near-full employment — unemployment at just 1.6%",
+      "Price stability with inflation at 1.1%"
+    ],
+    "risks": [
+      "Very low per-capita income — 8% of the world average"
+    ],
+    "didYouKnow": "Per-capita income is just 8% of the world average"
+  },
+  "BT": {
+    "overview": "Bhutan has a $4 billion economy. Despite its total output, per-capita income of $4,493 remains far below the world average. The economy is currently expanding rapidly, with GDP growth of +8.0%.",
+    "strengths": [
+      "Exceptional GDP growth of +8.0%",
+      "Low unemployment rate of 3.2%"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has grown 11× since 1996"
+  },
+  "BO": {
+    "overview": "Bolivia (Plurinational State of) has a $65 billion economy. Its per-capita income of $5,148 is below the world average. The economy is currently contracting slightly, with GDP growth of -1.6%.",
+    "strengths": [
+      "Near-full employment — unemployment at just 3.0%"
+    ],
+    "risks": [
+      "High inflation of 19.5%, well above healthy levels",
+      "GDP growth is negative at -1.6%"
+    ],
+    "didYouKnow": "GDP has grown 7× since 1996"
+  },
+  "BA": {
+    "overview": "Bosnia and Herzegovina has a $33 billion economy. Its per-capita income of $10,382 is below the world average. The economy is currently growing steadily, with GDP growth of +2.1%.",
+    "strengths": [],
+    "risks": [
+      "High unemployment at 11.0%, above the world average"
+    ],
+    "didYouKnow": "GDP has grown 11× since 1996"
+  },
+  "BW": {
+    "overview": "Botswana has a $20 billion economy. Its per-capita income of $7,778 is below the world average. The economy is currently contracting slightly, with GDP growth of -0.7%.",
+    "strengths": [],
+    "risks": [
+      "GDP growth is negative at -0.7%",
+      "Very high unemployment rate of 24.5%"
+    ],
+    "didYouKnow": "Unemployment is more than double the Africa regional average"
+  },
+  "BR": {
+    "overview": "Brazil has a $2.3 trillion economy, ranked #11 globally by GDP. Its per-capita income of $10,713 is below the world average. The economy is currently growing steadily, with GDP growth of +2.3%.",
+    "strengths": [],
+    "risks": [
+      "Elevated inflation at 5.0%"
+    ]
+  },
+  "VI": {
+    "strengths": [],
+    "risks": [
+      "High unemployment at 11.4%, above the world average"
+    ]
+  },
+  "BN": {
+    "overview": "Brunei Darussalam has a $15 billion economy. With a per-capita income of $32,235, it sits above the world average. The economy is currently growing modestly, with GDP growth of +0.7%.",
+    "strengths": [
+      "Above-average per-capita income of $32,235"
+    ],
+    "risks": []
+  },
+  "BG": {
+    "overview": "Bulgaria has a $131 billion economy. Its per-capita income of $20,328 is above the world average. The economy is currently growing solidly, with GDP growth of +3.1%.",
+    "strengths": [
+      "Low unemployment rate of 3.5%",
+      "9 straight years of GDP growth"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has grown 9× since 1996"
+  },
+  "BF": {
+    "overview": "Burkina Faso has a $28 billion economy. Despite its total output, per-capita income of $1,148 remains far below the world average. The economy is currently growing solidly, with GDP growth of +5.3%.",
+    "strengths": [
+      "Strong GDP growth at +5.3%",
+      "Low unemployment rate of 3.5%"
+    ],
+    "risks": [
+      "Deflation risk — prices are falling at 0.6% per year",
+      "Per-capita income is only 6% of the world average"
+    ],
+    "didYouKnow": "Per-capita income is just 6% of the world average"
+  },
+  "BI": {
+    "overview": "Burundi has a $3 billion economy. Despite its total output, per-capita income of $234 remains far below the world average. The economy is currently growing solidly, with GDP growth of +4.2%.",
+    "strengths": [
+      "Strong GDP growth at +4.2%",
+      "Near-full employment — unemployment at just 0.9%"
+    ],
+    "risks": [
+      "Very high inflation of 34.1%, sharply eroding purchasing power",
+      "Per-capita income is only 1% of the world average"
+    ],
+    "didYouKnow": "Per-capita income is less than 5% of the world average"
+  },
+  "KH": {
+    "overview": "Cambodia has a $51 billion economy. Despite its total output, per-capita income of $2,872 remains far below the world average. The economy is currently growing solidly, with GDP growth of +5.3%.",
+    "strengths": [
+      "Strong GDP growth at +5.3%",
+      "Near-full employment — unemployment at just 0.3%"
+    ],
+    "risks": [
+      "Very low per-capita income — 15% of the world average"
+    ],
+    "didYouKnow": "GDP has grown 13× since 1996"
+  },
+  "CM": {
+    "overview": "Cameroon has a $59 billion economy. Despite its total output, per-capita income of $1,972 remains far below the world average. The economy is currently growing solidly, with GDP growth of +3.2%.",
+    "strengths": [
+      "Low unemployment rate of 3.6%"
+    ],
+    "risks": [
+      "Very low per-capita income — 10% of the world average"
+    ],
+    "didYouKnow": "GDP has more than doubled since 2006"
+  },
+  "CA": {
+    "overview": "Canada has a $2.3 trillion economy, ranked #10 globally by GDP. With a per-capita income of $55,698, it sits above the world average. The economy is currently growing steadily, with GDP growth of +1.7%.",
+    "strengths": [
+      "Above-average per-capita income of $55,698"
+    ],
+    "risks": [],
+    "didYouKnow": "One of the world's 10 largest economies by GDP"
+  },
+  "CV": {
+    "overview": "Cabo Verde has a $3 billion economy. Its per-capita income of $5,796 is below the world average. The economy is currently expanding rapidly, with GDP growth of +6.3%.",
+    "strengths": [
+      "Strong GDP growth at +6.3%"
+    ],
+    "risks": [
+      "High unemployment at 11.9%, above the world average"
+    ],
+    "didYouKnow": "GDP has grown 5× since 1996"
+  },
+  "CF": {
+    "overview": "Central African Republic has a $3 billion economy. Despite its total output, per-capita income of $556 remains far below the world average. The economy is currently growing solidly, with GDP growth of +4.5%.",
+    "strengths": [
+      "Strong GDP growth at +4.5%",
+      "Price stability with inflation at 1.0%"
+    ],
+    "risks": [
+      "Per-capita income is only 3% of the world average"
+    ],
+    "didYouKnow": "Per-capita income is less than 5% of the world average"
+  },
+  "TD": {
+    "overview": "Chad has a $21 billion economy. Despite its total output, per-capita income of $1,022 remains far below the world average. The economy is currently growing solidly, with GDP growth of +5.6%.",
+    "strengths": [
+      "Strong GDP growth at +5.6%",
+      "Near-full employment — unemployment at just 1.1%"
+    ],
+    "risks": [
+      "Deflation risk — prices are falling at 3.9% per year",
+      "Per-capita income is only 5% of the world average"
+    ],
+    "didYouKnow": "GDP has grown 12× since 1996"
+  },
+  "CL": {
+    "overview": "Chile has a $357 billion economy. Its per-capita income of $17,995 is below the world average. The economy is currently growing steadily, with GDP growth of +2.5%.",
+    "strengths": [],
+    "risks": [],
+    "didYouKnow": "GDP has more than doubled since 2006"
+  },
+  "CN": {
+    "overview": "China has a $19.5 trillion economy, the #2 largest economy in the world. Its per-capita income of $13,862 is below the world average. The economy is currently growing solidly, with GDP growth of +5.0%.",
+    "strengths": [
+      "Strong GDP growth at +5.0%",
+      "Low unemployment rate of 4.6%",
+      "Price stability with inflation at 0.1%"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has grown 22× since 1996"
+  },
+  "CO": {
+    "overview": "Colombia has a $457 billion economy. Its per-capita income of $8,562 is below the world average. The economy is currently growing steadily, with GDP growth of +2.6%.",
+    "strengths": [],
+    "risks": [
+      "Elevated inflation at 5.1%"
+    ],
+    "didYouKnow": "GDP has more than doubled since 2006"
+  },
+  "KM": {
+    "overview": "Comoros has a $2 billion economy. Despite its total output, per-capita income of $2,056 remains far below the world average. The economy is currently growing solidly, with GDP growth of +3.8%.",
+    "strengths": [
+      "Above-average GDP growth of +3.8%",
+      "Low unemployment rate of 3.8%"
+    ],
+    "risks": [
+      "Very low per-capita income — 10% of the world average"
+    ],
+    "didYouKnow": "GDP has more than doubled since 2006"
+  },
+  "CG": {
+    "overview": "Congo has a $16 billion economy. Despite its total output, per-capita income of $2,515 remains far below the world average. The economy is currently growing solidly, with GDP growth of +3.1%.",
+    "strengths": [],
+    "risks": [
+      "Very high unemployment rate of 19.9%",
+      "Very low per-capita income — 13% of the world average"
+    ],
+    "didYouKnow": "GDP has grown 6× since 1996"
+  },
+  "CD": {
+    "overview": "Congo (Democratic Republic of the) has a $91 billion economy. Despite its total output, per-capita income of $807 remains far below the world average. The economy is currently growing solidly, with GDP growth of +5.8%.",
+    "strengths": [
+      "Strong GDP growth at +5.8%",
+      "Low unemployment rate of 4.4%"
+    ],
+    "risks": [
+      "Per-capita income is only 4% of the world average"
+    ],
+    "didYouKnow": "Per-capita income is less than 5% of the world average"
+  },
+  "CR": {
+    "overview": "Costa Rica has a $103 billion economy. Its per-capita income of $19,970 is above the world average. The economy is currently growing solidly, with GDP growth of +4.6%.",
+    "strengths": [
+      "Strong GDP growth at +4.6%"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has grown 8× since 1996"
+  },
+  "HR": {
+    "overview": "Croatia has a $105 billion economy. Its per-capita income of $27,104 is above the world average. The economy is currently growing solidly, with GDP growth of +3.4%.",
+    "strengths": [],
+    "risks": []
+  },
+  "CU": {
+    "strengths": [
+      "Near-full employment — unemployment at just 1.7%",
+      "Uninterrupted GDP growth for 24 consecutive years"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has grown every year for the past 24 years without interruption"
+  },
+  "CY": {
+    "overview": "Cyprus has a $41 billion economy. With a per-capita income of $41,783, it sits above the world average. The economy is currently growing solidly, with GDP growth of +3.8%.",
+    "strengths": [
+      "Above-average GDP growth of +3.8%",
+      "Low unemployment rate of 4.9%",
+      "Price stability with inflation at 0.1%"
+    ],
+    "risks": []
+  },
+  "CZ": {
+    "overview": "Czech Republic has a $391 billion economy. With a per-capita income of $35,917, it sits above the world average. The economy is currently growing steadily, with GDP growth of +2.6%.",
+    "strengths": [
+      "Near-full employment — unemployment at just 2.8%",
+      "Above-average per-capita income of $35,917"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has grown 5× since 1996"
+  },
+  "DK": {
+    "overview": "Denmark has a $463 billion economy. Per-capita income of $76,970 is 3.9× the world average, placing it among the wealthiest nations. The economy is currently growing steadily, with GDP growth of +2.9%.",
+    "strengths": [
+      "Price stability with inflation at 1.9%",
+      "Very high per-capita income — 3.9× the world average"
+    ],
+    "risks": []
+  },
+  "DJ": {
+    "overview": "Djibouti has a $5 billion economy. Despite its total output, per-capita income of $3,906 remains far below the world average. The economy is currently expanding rapidly, with GDP growth of +6.5%.",
+    "strengths": [
+      "Strong GDP growth at +6.5%",
+      "Uninterrupted GDP growth for 28 consecutive years"
+    ],
+    "risks": [
+      "Unemployment crisis — 26.0% of the labour force is out of work",
+      "Very low per-capita income — 20% of the world average"
+    ],
+    "didYouKnow": "GDP has grown every year for the past 28 years without interruption"
+  },
+  "DM": {
+    "overview": "Dominica has a $724 million economy. Its per-capita income of $10,989 is below the world average. The economy is currently growing solidly, with GDP growth of +3.1%.",
+    "strengths": [],
+    "risks": []
+  },
+  "DO": {
+    "overview": "Dominican Republic has a $127 billion economy. Its per-capita income of $11,059 is below the world average. The economy is currently growing steadily, with GDP growth of +2.1%.",
+    "strengths": [],
+    "risks": [],
+    "didYouKnow": "GDP has grown 7× since 1996"
+  },
+  "EC": {
+    "overview": "Ecuador has a $130 billion economy. Its per-capita income of $7,125 is below the world average. The economy is currently growing solidly, with GDP growth of +3.7%.",
+    "strengths": [
+      "Above-average GDP growth of +3.7%",
+      "Low unemployment rate of 3.3%",
+      "Price stability with inflation at 0.7%"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has more than doubled since 2006"
+  },
+  "EG": {
+    "overview": "Egypt has a $365 billion economy. Despite its total output, per-capita income of $3,086 remains far below the world average. The economy is currently growing solidly, with GDP growth of +4.4%.",
+    "strengths": [
+      "Strong GDP growth at +4.4%"
+    ],
+    "risks": [
+      "High inflation of 14.1%, well above healthy levels",
+      "Very low per-capita income — 16% of the world average"
+    ],
+    "didYouKnow": "GDP has grown 6× since 1996"
+  },
+  "SV": {
+    "overview": "El Salvador has a $37 billion economy. Its per-capita income of $5,767 is below the world average. The economy is currently growing solidly, with GDP growth of +3.9%.",
+    "strengths": [
+      "Above-average GDP growth of +3.9%",
+      "Low unemployment rate of 3.3%",
+      "Price stability with inflation at 0.3%"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has more than doubled since 2006"
+  },
+  "GQ": {
+    "overview": "Equatorial Guinea has a $13 billion economy. Its per-capita income of $6,615 is below the world average. The economy is currently in recession, with GDP growth of -5.8%.",
+    "strengths": [],
+    "risks": [
+      "Economy in deep recession — GDP contracting at -5.8%"
+    ],
+    "didYouKnow": "GDP has grown 57× since 1996"
+  },
+  "EE": {
+    "overview": "Estonia has a $47 billion economy. With a per-capita income of $34,418, it sits above the world average. The economy is currently growing modestly, with GDP growth of +0.6%.",
+    "strengths": [
+      "Above-average per-capita income of $34,418"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has grown 9× since 1996"
+  },
+  "ET": {
+    "overview": "Ethiopia has a $126 billion economy. Despite its total output, per-capita income of $933 remains far below the world average. The economy is currently expanding rapidly, with GDP growth of +9.8%.",
+    "strengths": [
+      "Exceptional GDP growth of +9.8%",
+      "Low unemployment rate of 3.3%",
+      "14 straight years of GDP growth"
+    ],
+    "risks": [
+      "High inflation of 13.2%, well above healthy levels",
+      "Per-capita income is only 5% of the world average"
+    ],
+    "didYouKnow": "GDP has grown 17× since 1996"
+  },
+  "FJ": {
+    "overview": "Fiji has a $6 billion economy. Its per-capita income of $6,642 is below the world average. The economy is currently growing solidly, with GDP growth of +3.2%.",
+    "strengths": [],
+    "risks": [
+      "Deflation risk — prices are falling at 1.4% per year"
+    ]
+  },
+  "FI": {
+    "overview": "Finland has a $317 billion economy. With a per-capita income of $56,149, it sits above the world average. The economy is currently growing modestly, with GDP growth of +0.2%.",
+    "strengths": [
+      "Price stability with inflation at 0.3%",
+      "Above-average per-capita income of $56,149"
+    ],
+    "risks": []
+  },
+  "FR": {
+    "overview": "France has a $3.4 trillion economy, ranked #7 globally by GDP. With a per-capita income of $48,986, it sits above the world average. The economy is currently growing modestly, with GDP growth of +0.8%.",
+    "strengths": [
+      "Price stability with inflation at 0.9%",
+      "Above-average per-capita income of $48,986"
+    ],
+    "risks": [],
+    "didYouKnow": "One of the world's 10 largest economies by GDP"
+  },
+  "PF": {
+    "strengths": [],
+    "risks": [
+      "High unemployment at 11.7%, above the world average"
+    ],
+    "didYouKnow": "Unemployment is more than double the Oceania regional average"
+  },
+  "GA": {
+    "overview": "Gabon has a $21 billion economy. Its per-capita income of $8,263 is below the world average. The economy is currently growing steadily, with GDP growth of +2.5%.",
+    "strengths": [
+      "Price stability with inflation at 1.8%"
+    ],
+    "risks": [
+      "Very high unemployment rate of 20.2%"
+    ],
+    "didYouKnow": "Unemployment is more than double the Africa regional average"
+  },
+  "GM": {
+    "overview": "Gambia has a $3 billion economy. Despite its total output, per-capita income of $919 remains far below the world average. The economy is currently growing solidly, with GDP growth of +5.9%.",
+    "strengths": [
+      "Strong GDP growth at +5.9%"
+    ],
+    "risks": [
+      "Per-capita income is only 5% of the world average"
+    ],
+    "didYouKnow": "Per-capita income is less than 5% of the world average"
+  },
+  "GE": {
+    "overview": "Georgia has a $38 billion economy. Its per-capita income of $9,692 is below the world average. The economy is currently expanding rapidly, with GDP growth of +7.5%.",
+    "strengths": [
+      "Exceptional GDP growth of +7.5%"
+    ],
+    "risks": [
+      "High unemployment at 12.1%, above the world average"
+    ],
+    "didYouKnow": "GDP has grown 11× since 1996"
+  },
+  "DE": {
+    "overview": "Germany has a $5.1 trillion economy, the #3 largest economy in the world. Per-capita income of $60,496 is 3.1× the world average, placing it among the wealthiest nations. The economy is currently growing modestly, with GDP growth of +0.2%.",
+    "strengths": [
+      "Low unemployment rate of 3.7%",
+      "Very high per-capita income — 3.1× the world average",
+      "One of the five largest economies in the world"
+    ],
+    "risks": [],
+    "didYouKnow": "One of the world's three largest economies"
+  },
+  "GH": {
+    "overview": "Ghana has a $114 billion economy. Despite its total output, per-capita income of $3,257 remains far below the world average. The economy is currently growing solidly, with GDP growth of +6.0%.",
+    "strengths": [
+      "Strong GDP growth at +6.0%",
+      "Near-full employment — unemployment at just 3.0%"
+    ],
+    "risks": [
+      "High inflation of 14.2%, well above healthy levels",
+      "Very low per-capita income — 17% of the world average"
+    ],
+    "didYouKnow": "GDP has grown 12× since 1996"
+  },
+  "GR": {
+    "overview": "Greece has a $281 billion economy. Its per-capita income of $26,948 is above the world average. The economy is currently growing steadily, with GDP growth of +2.1%.",
+    "strengths": [],
+    "risks": []
+  },
+  "GD": {
+    "overview": "Grenada has a $1 billion economy. Its per-capita income of $12,107 is below the world average. The economy is currently growing solidly, with GDP growth of +4.4%.",
+    "strengths": [
+      "Strong GDP growth at +4.4%",
+      "Price stability with inflation at 0.6%"
+    ],
+    "risks": []
+  },
+  "GT": {
+    "overview": "Guatemala has a $123 billion economy. Its per-capita income of $6,598 is below the world average. The economy is currently growing solidly, with GDP growth of +4.3%.",
+    "strengths": [
+      "Strong GDP growth at +4.3%",
+      "Near-full employment — unemployment at just 2.6%",
+      "Price stability with inflation at 1.5%"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has grown 7× since 1996"
+  },
+  "GN": {
+    "overview": "Guinea has a $28 billion economy. Despite its total output, per-capita income of $1,877 remains far below the world average. The economy is currently expanding rapidly, with GDP growth of +7.4%.",
+    "strengths": [
+      "Exceptional GDP growth of +7.4%",
+      "8 straight years of GDP growth"
+    ],
+    "risks": [
+      "Very low per-capita income — 10% of the world average"
+    ],
+    "didYouKnow": "Per-capita income is just 10% of the world average"
+  },
+  "GW": {
+    "overview": "Guinea-Bissau has a $3 billion economy. Despite its total output, per-capita income of $1,124 remains far below the world average. The economy is currently growing solidly, with GDP growth of +5.8%.",
+    "strengths": [
+      "Strong GDP growth at +5.8%",
+      "Near-full employment — unemployment at just 2.7%",
+      "Price stability with inflation at 0.9%"
+    ],
+    "risks": [
+      "Per-capita income is only 6% of the world average"
+    ],
+    "didYouKnow": "Per-capita income is just 6% of the world average"
+  },
+  "GY": {
+    "overview": "Guyana has a $27 billion economy. With a per-capita income of $32,414, it sits above the world average. The economy is currently expanding rapidly, with GDP growth of +19.3%.",
+    "strengths": [
+      "Exceptional GDP growth of +19.3%",
+      "Above-average per-capita income of $32,414",
+      "10 straight years of GDP growth"
+    ],
+    "risks": [
+      "High unemployment at 12.0%, above the world average"
+    ],
+    "didYouKnow": "GDP has grown 35× since 1996"
+  },
+  "HT": {
+    "overview": "Haiti has a $32 billion economy. Despite its total output, per-capita income of $2,694 remains far below the world average. The economy is currently in recession, with GDP growth of -2.7%.",
+    "strengths": [],
+    "risks": [
+      "Very high inflation of 28.6%, sharply eroding purchasing power",
+      "GDP growth is negative at -2.7%",
+      "High unemployment at 14.9%, above the world average"
+    ],
+    "didYouKnow": "GDP has grown 8× since 1996"
+  },
+  "HN": {
+    "overview": "Honduras has a $40 billion economy. Despite its total output, per-capita income of $3,598 remains far below the world average. The economy is currently growing solidly, with GDP growth of +3.8%.",
+    "strengths": [
+      "Above-average GDP growth of +3.8%",
+      "Low unemployment rate of 4.9%"
+    ],
+    "risks": [
+      "Very low per-capita income — 18% of the world average"
+    ],
+    "didYouKnow": "GDP has grown 8× since 1996"
+  },
+  "HU": {
+    "overview": "Hungary has a $246 billion economy. Its per-capita income of $25,907 is above the world average. The economy is currently growing modestly, with GDP growth of +0.5%.",
+    "strengths": [
+      "Low unemployment rate of 4.5%"
+    ],
+    "risks": []
+  },
+  "HK": {
+    "overview": "Hong Kong has a $427 billion economy. With a per-capita income of $56,983, it sits above the world average. The economy is currently growing solidly, with GDP growth of +3.5%.",
+    "strengths": [
+      "Near-full employment — unemployment at just 2.8%",
+      "Price stability with inflation at 1.4%",
+      "Above-average per-capita income of $56,983"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has more than doubled since 2006"
+  },
+  "IS": {
+    "overview": "Iceland has a $39 billion economy. Per-capita income of $98,323 is 5.0× the world average, placing it among the wealthiest nations. The economy is currently growing steadily, with GDP growth of +1.3%.",
+    "strengths": [
+      "Low unemployment rate of 3.6%",
+      "Very high per-capita income — 5.0× the world average"
+    ],
+    "risks": []
+  },
+  "IN": {
+    "overview": "India has a $4.0 trillion economy, ranked #6 globally by GDP. Despite its total output, per-capita income of $2,702 remains far below the world average. The economy is currently expanding rapidly, with GDP growth of +7.6%.",
+    "strengths": [
+      "Exceptional GDP growth of +7.6%",
+      "Low unemployment rate of 4.2%"
+    ],
+    "risks": [
+      "Very low per-capita income — 14% of the world average"
+    ],
+    "didYouKnow": "One of the world's 10 largest economies by GDP"
+  },
+  "ID": {
+    "overview": "Indonesia has a $1.4 trillion economy, ranked #17 globally. Its per-capita income of $5,060 is below the world average. The economy is currently growing solidly, with GDP growth of +5.1%.",
+    "strengths": [
+      "Strong GDP growth at +5.1%",
+      "Low unemployment rate of 3.2%",
+      "Price stability with inflation at 1.9%"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has grown 6× since 1996"
+  },
+  "CI": {
+    "overview": "Ivory Coast has a $100 billion economy. Despite its total output, per-capita income of $3,050 remains far below the world average. The economy is currently expanding rapidly, with GDP growth of +6.5%.",
+    "strengths": [
+      "Strong GDP growth at +6.5%",
+      "Near-full employment — unemployment at just 2.3%",
+      "Price stability with inflation at 0.1%"
+    ],
+    "risks": [
+      "Very low per-capita income — 16% of the world average"
+    ],
+    "didYouKnow": "GDP has more than doubled since 2006"
+  },
+  "IR": {
+    "overview": "Iran (Islamic Republic of) has a $363 billion economy. Despite its total output, per-capita income of $3,924 remains far below the world average. The economy is currently in recession, with GDP growth of -2.8%.",
+    "strengths": [],
+    "risks": [
+      "Very high inflation of 42.2%, sharply eroding purchasing power",
+      "GDP growth is negative at -2.8%"
+    ]
+  },
+  "IQ": {
+    "overview": "Iraq has a $254 billion economy. Its per-capita income of $5,410 is below the world average. The economy is currently in recession, with GDP growth of -2.2%.",
+    "strengths": [
+      "Price stability with inflation at 0.3%"
+    ],
+    "risks": [
+      "GDP growth is negative at -2.2%",
+      "Very high unemployment rate of 15.5%"
+    ],
+    "didYouKnow": "GDP has grown 27× since 1996"
+  },
+  "IE": {
+    "overview": "Ireland has a $722 billion economy, ranked #23 globally. Per-capita income of $131,592 is 6.7× the world average, placing it among the wealthiest nations. The economy is currently expanding rapidly, with GDP growth of +12.3%.",
+    "strengths": [
+      "Exceptional GDP growth of +12.3%",
+      "Low unemployment rate of 4.6%",
+      "Very high per-capita income — 6.7× the world average"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has grown 8× since 1996"
+  },
+  "IL": {
+    "overview": "Israel has a $611 billion economy, ranked #26 globally. Per-capita income of $60,337 is 3.1× the world average, placing it among the wealthiest nations. The economy is currently growing steadily, with GDP growth of +2.9%.",
+    "strengths": [
+      "Low unemployment rate of 3.5%",
+      "Very high per-capita income — 3.1× the world average"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has more than doubled since 2006"
+  },
+  "IT": {
+    "overview": "Italy has a $2.6 trillion economy, ranked #9 globally by GDP. With a per-capita income of $43,309, it sits above the world average. The economy is currently growing modestly, with GDP growth of +0.5%.",
+    "strengths": [
+      "Price stability with inflation at 1.5%",
+      "Above-average per-capita income of $43,309"
+    ],
+    "risks": [],
+    "didYouKnow": "One of the world's 10 largest economies by GDP"
+  },
+  "JM": {
+    "overview": "Jamaica has a $23 billion economy. Its per-capita income of $8,003 is below the world average. The economy is currently growing modestly, with GDP growth of +0.1%.",
+    "strengths": [
+      "Low unemployment rate of 3.3%"
+    ],
+    "risks": []
+  },
+  "JP": {
+    "overview": "Japan has a $4.4 trillion economy, the #4 largest economy in the world. With a per-capita income of $35,951, it sits above the world average. The economy is currently growing steadily, with GDP growth of +1.2%.",
+    "strengths": [
+      "Near-full employment — unemployment at just 2.5%",
+      "Above-average per-capita income of $35,951",
+      "One of the five largest economies in the world"
+    ],
+    "risks": [],
+    "didYouKnow": "One of the world's 10 largest economies by GDP"
+  },
+  "JO": {
+    "overview": "Jordan has a $62 billion economy. Its per-capita income of $5,348 is below the world average. The economy is currently growing steadily, with GDP growth of +2.8%.",
+    "strengths": [
+      "Price stability with inflation at 1.8%"
+    ],
+    "risks": [
+      "Very high unemployment rate of 16.5%"
+    ],
+    "didYouKnow": "GDP has grown 8× since 1996"
+  },
+  "KZ": {
+    "overview": "Kazakhstan has a $306 billion economy. Its per-capita income of $14,692 is below the world average. The economy is currently expanding rapidly, with GDP growth of +6.5%.",
+    "strengths": [
+      "Strong GDP growth at +6.5%",
+      "Low unemployment rate of 4.8%"
+    ],
+    "risks": [
+      "High inflation of 11.4%, well above healthy levels"
+    ],
+    "didYouKnow": "GDP has grown 14× since 1996"
+  },
+  "KE": {
+    "overview": "Kenya has a $136 billion economy. Despite its total output, per-capita income of $2,363 remains far below the world average. The economy is currently growing solidly, with GDP growth of +4.6%.",
+    "strengths": [
+      "Strong GDP growth at +4.6%"
+    ],
+    "risks": [
+      "Very low per-capita income — 12% of the world average"
+    ],
+    "didYouKnow": "GDP has grown 10× since 1996"
+  },
+  "KI": {
+    "overview": "Kiribati has a $349 million economy. Despite its total output, per-capita income of $2,559 remains far below the world average. The economy is currently growing solidly, with GDP growth of +4.2%.",
+    "strengths": [
+      "Strong GDP growth at +4.2%"
+    ],
+    "risks": [
+      "Very low per-capita income — 13% of the world average"
+    ],
+    "didYouKnow": "GDP has more than doubled since 2006"
+  },
+  "KW": {
+    "overview": "Kuwait has a $157 billion economy. With a per-capita income of $32,312, it sits above the world average. The economy is currently growing steadily, with GDP growth of +2.7%.",
+    "strengths": [
+      "Near-full employment — unemployment at just 2.2%",
+      "Above-average per-capita income of $32,312"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has grown 5× since 1996"
+  },
+  "KG": {
+    "overview": "Kyrgyzstan has a $23 billion economy. Despite its total output, per-capita income of $3,081 remains far below the world average. The economy is currently expanding rapidly, with GDP growth of +11.1%.",
+    "strengths": [
+      "Exceptional GDP growth of +11.1%",
+      "Low unemployment rate of 3.5%"
+    ],
+    "risks": [
+      "Elevated inflation at 8.2%",
+      "Very low per-capita income — 16% of the world average"
+    ],
+    "didYouKnow": "GDP has grown 10× since 1996"
+  },
+  "LA": {
+    "overview": "Lao People's Democratic Republic has a $18 billion economy. Despite its total output, per-capita income of $2,325 remains far below the world average. The economy is currently growing solidly, with GDP growth of +4.5%.",
+    "strengths": [
+      "Strong GDP growth at +4.5%",
+      "Near-full employment — unemployment at just 1.2%"
+    ],
+    "risks": [
+      "Elevated inflation at 7.7%",
+      "Very low per-capita income — 12% of the world average"
+    ],
+    "didYouKnow": "GDP has grown 9× since 1996"
+  },
+  "LV": {
+    "overview": "Latvia has a $49 billion economy. Its per-capita income of $26,312 is above the world average. The economy is currently growing steadily, with GDP growth of +2.1%.",
+    "strengths": [],
+    "risks": [],
+    "didYouKnow": "GDP has grown 8× since 1996"
+  },
+  "LB": {
+    "strengths": [],
+    "risks": [
+      "High inflation of 14.6%, well above healthy levels",
+      "GDP is ~53% below its recent peak"
+    ]
+  },
+  "LS": {
+    "overview": "Lesotho has a $3 billion economy. Despite its total output, per-capita income of $1,089 remains far below the world average. The economy is currently growing steadily, with GDP growth of +2.0%.",
+    "strengths": [],
+    "risks": [
+      "Very high unemployment rate of 16.3%",
+      "Per-capita income is only 6% of the world average"
+    ],
+    "didYouKnow": "Per-capita income is just 6% of the world average"
+  },
+  "LR": {
+    "overview": "Liberia has a $5 billion economy. Despite its total output, per-capita income of $915 remains far below the world average. The economy is currently growing solidly, with GDP growth of +5.0%.",
+    "strengths": [
+      "Strong GDP growth at +5.0%",
+      "Near-full employment — unemployment at just 2.9%"
+    ],
+    "risks": [
+      "Elevated inflation at 8.3%",
+      "Per-capita income is only 5% of the world average"
+    ],
+    "didYouKnow": "GDP has grown 30× since 1996"
+  },
+  "LY": {
+    "overview": "Libya has a $48 billion economy. Its per-capita income of $6,449 is below the world average. The economy is currently expanding rapidly, with GDP growth of +13.4%.",
+    "strengths": [
+      "Exceptional GDP growth of +13.4%",
+      "Price stability with inflation at 1.8%"
+    ],
+    "risks": [
+      "Very high unemployment rate of 18.8%",
+      "GDP is ~37% below its recent peak"
+    ],
+    "didYouKnow": "GDP growth outpaces the Africa regional average by 8.8 percentage points"
+  },
+  "LT": {
+    "overview": "Lithuania has a $95 billion economy. With a per-capita income of $32,959, it sits above the world average. The economy is currently growing steadily, with GDP growth of +2.9%.",
+    "strengths": [
+      "Above-average per-capita income of $32,959",
+      "9 straight years of GDP growth"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has grown 10× since 1996"
+  },
+  "LU": {
+    "overview": "Luxembourg has a $101 billion economy. Per-capita income of $147,252 is 7.5× the world average, placing it among the wealthiest nations. The economy is currently growing modestly, with GDP growth of +0.6%.",
+    "strengths": [
+      "Very high per-capita income — 7.5× the world average"
+    ],
+    "risks": [],
+    "didYouKnow": "Per-capita income is 7.5× the world average"
+  },
+  "MO": {
+    "overview": "Macao has a $52 billion economy. Per-capita income of $75,902 is 3.9× the world average, placing it among the wealthiest nations. The economy is currently growing solidly, with GDP growth of +4.7%.",
+    "strengths": [
+      "Strong GDP growth at +4.7%",
+      "Near-full employment — unemployment at just 2.3%",
+      "Price stability with inflation at 0.3%"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has grown 7× since 1996"
+  },
+  "MK": {
+    "overview": "North Macedonia has a $19 billion economy. Its per-capita income of $10,490 is below the world average. The economy is currently growing solidly, with GDP growth of +3.5%.",
+    "strengths": [],
+    "risks": [
+      "High unemployment at 12.3%, above the world average"
+    ],
+    "didYouKnow": "GDP has more than doubled since 2006"
+  },
+  "MG": {
+    "overview": "Madagascar has a $20 billion economy. Despite its total output, per-capita income of $599 remains far below the world average. The economy is currently growing solidly, with GDP growth of +3.0%.",
+    "strengths": [
+      "Low unemployment rate of 3.0%"
+    ],
+    "risks": [
+      "Elevated inflation at 8.1%",
+      "Per-capita income is only 3% of the world average"
+    ],
+    "didYouKnow": "Per-capita income is less than 5% of the world average"
+  },
+  "MW": {
+    "overview": "Malawi has a $15 billion economy. Despite its total output, per-capita income of $672 remains far below the world average. The economy is currently growing steadily, with GDP growth of +1.9%.",
+    "strengths": [],
+    "risks": [
+      "Very high inflation of 28.4%, sharply eroding purchasing power",
+      "Per-capita income is only 3% of the world average"
+    ],
+    "didYouKnow": "Per-capita income is less than 5% of the world average"
+  },
+  "MY": {
+    "overview": "Malaysia has a $472 billion economy. Its per-capita income of $13,125 is below the world average. The economy is currently growing solidly, with GDP growth of +5.2%.",
+    "strengths": [
+      "Strong GDP growth at +5.2%",
+      "Low unemployment rate of 3.8%",
+      "Price stability with inflation at 1.4%"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has more than doubled since 2006"
+  },
+  "MV": {
+    "overview": "Maldives has a $8 billion economy. Its per-capita income of $14,615 is below the world average. The economy is currently expanding rapidly, with GDP growth of +6.3%.",
+    "strengths": [
+      "Strong GDP growth at +6.3%",
+      "Low unemployment rate of 4.5%"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has grown 16× since 1996"
+  },
+  "ML": {
+    "overview": "Mali has a $30 billion economy. Despite its total output, per-capita income of $1,193 remains far below the world average. The economy is currently growing solidly, with GDP growth of +5.6%.",
+    "strengths": [
+      "Strong GDP growth at +5.6%",
+      "Near-full employment — unemployment at just 2.8%"
+    ],
+    "risks": [
+      "Per-capita income is only 6% of the world average"
+    ],
+    "didYouKnow": "Per-capita income is just 6% of the world average"
+  },
+  "MT": {
+    "overview": "Malta has a $28 billion economy. With a per-capita income of $47,907, it sits above the world average. The economy is currently growing solidly, with GDP growth of +4.0%.",
+    "strengths": [
+      "Above-average GDP growth of +4.0%",
+      "Near-full employment — unemployment at just 2.9%",
+      "Above-average per-capita income of $47,907"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has grown 7× since 1996"
+  },
+  "MH": {
+    "overview": "Marshall Islands has a $308 million economy. Its per-capita income of $8,489 is below the world average. The economy is currently growing steadily, with GDP growth of +2.3%.",
+    "strengths": [],
+    "risks": []
+  },
+  "MR": {
+    "overview": "Mauritania has a $12 billion economy. Despite its total output, per-capita income of $2,198 remains far below the world average. The economy is currently growing solidly, with GDP growth of +4.0%.",
+    "strengths": [
+      "Strong GDP growth at +4.0%",
+      "Price stability with inflation at 1.5%",
+      "9 straight years of GDP growth"
+    ],
+    "risks": [
+      "High unemployment at 10.3%, above the world average",
+      "Very low per-capita income — 11% of the world average"
+    ],
+    "didYouKnow": "GDP has grown 5× since 1996"
+  },
+  "MU": {
+    "overview": "Mauritius has a $16 billion economy. Its per-capita income of $12,991 is below the world average. The economy is currently growing solidly, with GDP growth of +3.2%.",
+    "strengths": [],
+    "risks": [],
+    "didYouKnow": "GDP has more than doubled since 2006"
+  },
+  "MX": {
+    "overview": "Mexico has a $1.8 trillion economy, ranked #14 globally by GDP. Its per-capita income of $13,889 is below the world average. The economy is currently growing modestly, with GDP growth of +0.6%.",
+    "strengths": [
+      "Near-full employment — unemployment at just 2.7%"
+    ],
+    "risks": []
+  },
+  "FM": {
+    "overview": "Micronesia (Federated States of) has a $502 million economy. Despite its total output, per-capita income of $4,414 remains far below the world average. The economy is currently growing steadily, with GDP growth of +1.1%.",
+    "strengths": [],
+    "risks": []
+  },
+  "MD": {
+    "overview": "Moldova (Republic of) has a $20 billion economy. Its per-capita income of $8,622 is below the world average. The economy is currently growing steadily, with GDP growth of +2.4%.",
+    "strengths": [
+      "Near-full employment — unemployment at just 1.5%"
+    ],
+    "risks": [
+      "Elevated inflation at 7.8%"
+    ],
+    "didYouKnow": "GDP has grown 11× since 1996"
+  },
+  "MN": {
+    "overview": "Mongolia has a $25 billion economy. Its per-capita income of $7,108 is below the world average. The economy is currently expanding rapidly, with GDP growth of +6.8%.",
+    "strengths": [
+      "Strong GDP growth at +6.8%"
+    ],
+    "risks": [
+      "Elevated inflation at 8.6%"
+    ],
+    "didYouKnow": "GDP has grown 18× since 1996"
+  },
+  "ME": {
+    "overview": "Montenegro has a $9 billion economy. Its per-capita income of $14,817 is below the world average. The economy is currently growing steadily, with GDP growth of +2.7%.",
+    "strengths": [],
+    "risks": [
+      "High unemployment at 13.6%, above the world average"
+    ],
+    "didYouKnow": "GDP has more than doubled since 2006"
+  },
+  "MA": {
+    "overview": "Morocco has a $182 billion economy. Despite its total output, per-capita income of $4,672 remains far below the world average. The economy is currently growing solidly, with GDP growth of +4.6%.",
+    "strengths": [
+      "Strong GDP growth at +4.6%",
+      "Price stability with inflation at 0.7%"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has more than doubled since 2006"
+  },
+  "MZ": {
+    "overview": "Mozambique has a $22 billion economy. Despite its total output, per-capita income of $627 remains far below the world average. The economy is currently contracting slightly, with GDP growth of -0.5%.",
+    "strengths": [],
+    "risks": [
+      "GDP growth is negative at -0.5%",
+      "Per-capita income is only 3% of the world average"
+    ],
+    "didYouKnow": "Per-capita income is less than 5% of the world average"
+  },
+  "MM": {
+    "overview": "Myanmar has a $82 billion economy. Despite its total output, per-capita income of $1,489 remains far below the world average. The economy is currently in recession, with GDP growth of -2.0%.",
+    "strengths": [
+      "Low unemployment rate of 3.0%"
+    ],
+    "risks": [
+      "GDP growth is negative at -2.0%",
+      "Per-capita income is only 8% of the world average"
+    ],
+    "didYouKnow": "GDP has grown 12× since 1996"
+  },
+  "NA": {
+    "overview": "Namibia has a $15 billion economy. Despite its total output, per-capita income of $4,876 remains far below the world average. The economy is currently growing steadily, with GDP growth of +1.7%.",
+    "strengths": [],
+    "risks": [
+      "Very high unemployment rate of 19.3%"
+    ],
+    "didYouKnow": "Unemployment is more than double the Africa regional average"
+  },
+  "NR": {
+    "overview": "Nauru has a $176 million economy. Its per-capita income of $14,640 is below the world average. The economy is currently growing steadily, with GDP growth of +2.1%.",
+    "strengths": [],
+    "risks": [],
+    "didYouKnow": "GDP has grown 5.7× since 2006"
+  },
+  "NP": {
+    "overview": "Nepal has a $45 billion economy. Despite its total output, per-capita income of $1,536 remains far below the world average. The economy is currently growing solidly, with GDP growth of +4.4%.",
+    "strengths": [
+      "Strong GDP growth at +4.4%"
+    ],
+    "risks": [
+      "High unemployment at 10.5%, above the world average",
+      "Per-capita income is only 8% of the world average"
+    ],
+    "didYouKnow": "Per-capita income is just 8% of the world average"
+  },
+  "NL": {
+    "overview": "Netherlands has a $1.3 trillion economy, ranked #18 globally. Per-capita income of $73,684 is 3.8× the world average, placing it among the wealthiest nations. The economy is currently growing steadily, with GDP growth of +1.8%.",
+    "strengths": [
+      "Low unemployment rate of 3.9%",
+      "Very high per-capita income — 3.8× the world average"
+    ],
+    "risks": []
+  },
+  "NC": {
+    "strengths": [],
+    "risks": [
+      "High unemployment at 11.2%, above the world average"
+    ],
+    "didYouKnow": "Unemployment is more than double the Oceania regional average"
+  },
+  "NZ": {
+    "overview": "New Zealand has a $264 billion economy. With a per-capita income of $49,591, it sits above the world average. The economy is currently growing modestly, with GDP growth of +0.5%.",
+    "strengths": [
+      "Above-average per-capita income of $49,591"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has more than doubled since 2006"
+  },
+  "NI": {
+    "overview": "Nicaragua has a $22 billion economy. Despite its total output, per-capita income of $3,173 remains far below the world average. The economy is currently growing solidly, with GDP growth of +4.9%.",
+    "strengths": [
+      "Strong GDP growth at +4.9%"
+    ],
+    "risks": [
+      "Very low per-capita income — 16% of the world average"
+    ],
+    "didYouKnow": "GDP has more than doubled since 2006"
+  },
+  "NE": {
+    "overview": "Niger has a $22 billion economy. Despite its total output, per-capita income of $775 remains far below the world average. The economy is currently expanding rapidly, with GDP growth of +7.0%.",
+    "strengths": [
+      "Exceptional GDP growth of +7.0%",
+      "Near-full employment — unemployment at just 0.4%"
+    ],
+    "risks": [
+      "Deflation risk — prices are falling at 4.5% per year",
+      "Per-capita income is only 4% of the world average"
+    ],
+    "didYouKnow": "Per-capita income is less than 5% of the world average"
+  },
+  "NG": {
+    "overview": "Nigeria has a $291 billion economy. Despite its total output, per-capita income of $1,224 remains far below the world average. The economy is currently growing solidly, with GDP growth of +4.0%.",
+    "strengths": [
+      "Strong GDP growth at +4.0%",
+      "Low unemployment rate of 3.1%"
+    ],
+    "risks": [
+      "Very high inflation of 23.0%, sharply eroding purchasing power",
+      "Per-capita income is only 6% of the world average",
+      "GDP is ~62% below its recent peak"
+    ],
+    "didYouKnow": "Per-capita income is just 6% of the world average"
+  },
+  "KP": {
+    "strengths": [
+      "Low unemployment rate of 3.5%"
+    ],
+    "risks": []
+  },
+  "NO": {
+    "overview": "Norway has a $531 billion economy, ranked #30 globally. Per-capita income of $94,594 is 4.8× the world average, placing it among the wealthiest nations. The economy is currently growing steadily, with GDP growth of +1.1%.",
+    "strengths": [
+      "Low unemployment rate of 4.6%",
+      "Very high per-capita income — 4.8× the world average"
+    ],
+    "risks": []
+  },
+  "OM": {
+    "overview": "Oman has a $110 billion economy. Its per-capita income of $19,947 is above the world average. The economy is currently growing steadily, with GDP growth of +2.4%.",
+    "strengths": [
+      "Low unemployment rate of 3.3%",
+      "Price stability with inflation at 1.0%"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has grown 6× since 1996"
+  },
+  "PK": {
+    "overview": "Pakistan has a $407 billion economy. Despite its total output, per-capita income of $1,596 remains far below the world average. The economy is currently growing solidly, with GDP growth of +3.7%.",
+    "strengths": [
+      "Above-average GDP growth of +3.7%"
+    ],
+    "risks": [
+      "Very low per-capita income — 8% of the world average"
+    ],
+    "didYouKnow": "Per-capita income is just 8% of the world average"
+  },
+  "PW": {
+    "overview": "Palau has a $345 million economy. Its per-capita income of $19,532 is below the world average. The economy is currently expanding rapidly, with GDP growth of +6.3%.",
+    "strengths": [
+      "Strong GDP growth at +6.3%"
+    ],
+    "risks": []
+  },
+  "PS": {
+    "overview": "Palestine, State of has a $17 billion economy. Despite its total output, per-capita income of $3,171 remains far below the world average. The economy is currently growing solidly, with GDP growth of +4.3%.",
+    "strengths": [
+      "Strong GDP growth at +4.3%"
+    ],
+    "risks": [
+      "Elevated inflation at 9.8%",
+      "Very low per-capita income — 16% of the world average"
+    ],
+    "didYouKnow": "GDP has more than doubled since 2006"
+  },
+  "PA": {
+    "overview": "Panama has a $90 billion economy. Its per-capita income of $19,790 is above the world average. The economy is currently growing solidly, with GDP growth of +4.4%.",
+    "strengths": [
+      "Strong GDP growth at +4.4%"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has grown 9× since 1996"
+  },
+  "PG": {
+    "overview": "Papua New Guinea has a $32 billion economy. Despite its total output, per-capita income of $3,020 remains far below the world average. The economy is currently growing solidly, with GDP growth of +5.6%.",
+    "strengths": [
+      "Strong GDP growth at +5.6%",
+      "Near-full employment — unemployment at just 2.6%"
+    ],
+    "risks": [
+      "Very low per-capita income — 15% of the world average"
+    ],
+    "didYouKnow": "GDP has grown 6× since 1996"
+  },
+  "PY": {
+    "overview": "Paraguay has a $49 billion economy. Its per-capita income of $7,027 is below the world average. The economy is currently expanding rapidly, with GDP growth of +6.6%.",
+    "strengths": [
+      "Strong GDP growth at +6.6%",
+      "Low unemployment rate of 4.8%"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has more than doubled since 2006"
+  },
+  "PE": {
+    "overview": "Peru has a $335 billion economy. Its per-capita income of $9,684 is below the world average. The economy is currently growing solidly, with GDP growth of +3.4%.",
+    "strengths": [
+      "Price stability with inflation at 1.5%"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has grown 5× since 1996"
+  },
+  "PH": {
+    "overview": "Philippines has a $487 billion economy. Despite its total output, per-capita income of $4,171 remains far below the world average. The economy is currently growing solidly, with GDP growth of +4.4%.",
+    "strengths": [
+      "Strong GDP growth at +4.4%",
+      "Near-full employment — unemployment at just 2.2%",
+      "Price stability with inflation at 1.7%"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has more than doubled since 2006"
+  },
+  "PL": {
+    "overview": "Poland has a $1.0 trillion economy, ranked #21 globally. Its per-capita income of $28,420 is above the world average. The economy is currently growing solidly, with GDP growth of +3.6%.",
+    "strengths": [
+      "Above-average GDP growth of +3.6%",
+      "Near-full employment — unemployment at just 3.0%",
+      "8 straight years of GDP growth"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has grown 6× since 1996"
+  },
+  "PT": {
+    "overview": "Portugal has a $347 billion economy. With a per-capita income of $32,082, it sits above the world average. The economy is currently growing steadily, with GDP growth of +1.9%.",
+    "strengths": [
+      "Above-average per-capita income of $32,082"
+    ],
+    "risks": []
+  },
+  "PR": {
+    "overview": "Puerto Rico has a $129 billion economy. With a per-capita income of $40,620, it sits above the world average. The economy is currently growing modestly, with GDP growth of +0.3%.",
+    "strengths": [
+      "Above-average per-capita income of $40,620"
+    ],
+    "risks": []
+  },
+  "QA": {
+    "overview": "Qatar has a $216 billion economy. Per-capita income of $72,525 is 3.7× the world average, placing it among the wealthiest nations. The economy is currently growing steadily, with GDP growth of +2.9%.",
+    "strengths": [
+      "Near-full employment — unemployment at just 0.1%",
+      "Very high per-capita income — 3.7× the world average"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has grown 24× since 1996"
+  },
+  "RO": {
+    "overview": "Romania has a $429 billion economy. Its per-capita income of $22,538 is above the world average. The economy is currently growing modestly, with GDP growth of +0.7%.",
+    "strengths": [
+      "9 straight years of GDP growth"
+    ],
+    "risks": [
+      "Elevated inflation at 7.2%"
+    ],
+    "didYouKnow": "GDP has grown 10× since 1996"
+  },
+  "RU": {
+    "overview": "Russian Federation has a $2.6 trillion economy, ranked #8 globally by GDP. Its per-capita income of $17,547 is below the world average. The economy is currently growing steadily, with GDP growth of +1.0%.",
+    "strengths": [
+      "Near-full employment — unemployment at just 2.1%"
+    ],
+    "risks": [
+      "Elevated inflation at 8.7%"
+    ],
+    "didYouKnow": "One of the world's 10 largest economies by GDP"
+  },
+  "RW": {
+    "overview": "Rwanda has a $16 billion economy. Despite its total output, per-capita income of $1,124 remains far below the world average. The economy is currently expanding rapidly, with GDP growth of +9.4%.",
+    "strengths": [
+      "Exceptional GDP growth of +9.4%"
+    ],
+    "risks": [
+      "Elevated inflation at 5.9%",
+      "High unemployment at 11.4%, above the world average",
+      "Per-capita income is only 6% of the world average"
+    ],
+    "didYouKnow": "GDP has grown 11× since 1996"
+  },
+  "KN": {
+    "overview": "Saint Kitts and Nevis has a $1 billion economy. Its per-capita income of $25,223 is above the world average. The economy is currently growing steadily, with GDP growth of +2.7%.",
+    "strengths": [],
+    "risks": []
+  },
+  "LC": {
+    "overview": "Saint Lucia has a $3 billion economy. Its per-capita income of $14,746 is below the world average. The economy is currently contracting slightly, with GDP growth of -0.6%.",
+    "strengths": [],
+    "risks": [
+      "GDP growth is negative at -0.6%"
+    ],
+    "didYouKnow": "GDP has more than doubled since 2006"
+  },
+  "VC": {
+    "overview": "Saint Vincent and the Grenadines has a $1 billion economy. Its per-capita income of $12,562 is below the world average. The economy is currently growing solidly, with GDP growth of +3.4%.",
+    "strengths": [
+      "Price stability with inflation at 0.8%"
+    ],
+    "risks": [
+      "Very high unemployment rate of 18.0%"
+    ],
+    "didYouKnow": "Unemployment is more than double the Americas regional average"
+  },
+  "WS": {
+    "overview": "Samoa has a $1 billion economy. Its per-capita income of $5,873 is below the world average. The economy is currently growing solidly, with GDP growth of +4.2%.",
+    "strengths": [
+      "Strong GDP growth at +4.2%",
+      "Low unemployment rate of 5.0%"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has more than doubled since 2006"
+  },
+  "ST": {
+    "overview": "Sao Tome and Principe has a $981 million economy. Despite its total output, per-capita income of $4,084 remains far below the world average. The economy is currently growing steadily, with GDP growth of +1.0%.",
+    "strengths": [
+      "9 straight years of GDP growth"
+    ],
+    "risks": [
+      "High inflation of 11.0%, well above healthy levels"
+    ],
+    "didYouKnow": "GDP has grown 6× since 1996"
+  },
+  "SA": {
+    "overview": "Saudi Arabia has a $1.3 trillion economy, ranked #19 globally. With a per-capita income of $34,537, it sits above the world average. The economy is currently growing solidly, with GDP growth of +4.5%.",
+    "strengths": [
+      "Strong GDP growth at +4.5%",
+      "Low unemployment rate of 3.0%",
+      "Above-average per-capita income of $34,537"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has grown 8× since 1996"
+  },
+  "SN": {
+    "overview": "Senegal has a $37 billion economy. Despite its total output, per-capita income of $1,955 remains far below the world average. The economy is currently expanding rapidly, with GDP growth of +6.7%.",
+    "strengths": [
+      "Strong GDP growth at +6.7%",
+      "Near-full employment — unemployment at just 2.7%",
+      "Price stability with inflation at 1.5%"
+    ],
+    "risks": [
+      "Very low per-capita income — 10% of the world average"
+    ],
+    "didYouKnow": "Per-capita income is just 10% of the world average"
+  },
+  "RS": {
+    "overview": "Serbia has a $100 billion economy. Its per-capita income of $15,262 is below the world average. The economy is currently growing steadily, with GDP growth of +2.0%.",
+    "strengths": [
+      "9 straight years of GDP growth"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has more than doubled since 2006"
+  },
+  "SC": {
+    "overview": "Seychelles has a $2 billion economy. Its per-capita income of $19,449 is below the world average. The economy is currently growing solidly, with GDP growth of +5.8%.",
+    "strengths": [
+      "Strong GDP growth at +5.8%",
+      "Price stability with inflation at 0.3%"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has more than doubled since 2006"
+  },
+  "SL": {
+    "overview": "Sierra Leone has a $7 billion economy. Despite its total output, per-capita income of $846 remains far below the world average. The economy is currently growing solidly, with GDP growth of +4.6%.",
+    "strengths": [
+      "Strong GDP growth at +4.6%",
+      "Low unemployment rate of 3.1%"
+    ],
+    "risks": [
+      "Elevated inflation at 7.5%",
+      "Per-capita income is only 4% of the world average"
+    ],
+    "didYouKnow": "Per-capita income is less than 5% of the world average"
+  },
+  "SG": {
+    "overview": "Singapore has a $604 billion economy, ranked #27 globally. Per-capita income of $98,814 is 5.0× the world average, placing it among the wealthiest nations. The economy is currently growing solidly, with GDP growth of +5.0%.",
+    "strengths": [
+      "Strong GDP growth at +5.0%",
+      "Near-full employment — unemployment at just 2.8%",
+      "Price stability with inflation at 0.9%"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has grown 6× since 1996"
+  },
+  "SX": {
+    "overview": "Sint Maarten (Dutch part) has a $2 billion economy. With a per-capita income of $42,978, it sits above the world average. The economy is currently growing solidly, with GDP growth of +3.4%.",
+    "strengths": [
+      "Above-average per-capita income of $42,978"
+    ],
+    "risks": []
+  },
+  "SK": {
+    "overview": "Slovakia has a $155 billion economy. Its per-capita income of $28,544 is above the world average. The economy is currently growing modestly, with GDP growth of +0.8%.",
+    "strengths": [],
+    "risks": [],
+    "didYouKnow": "GDP has grown 6× since 1996"
+  },
+  "SI": {
+    "overview": "Slovenia has a $80 billion economy. With a per-capita income of $37,376, it sits above the world average. The economy is currently growing steadily, with GDP growth of +1.1%.",
+    "strengths": [
+      "Low unemployment rate of 3.2%",
+      "Above-average per-capita income of $37,376"
+    ],
+    "risks": []
+  },
+  "SB": {
+    "overview": "Solomon Islands has a $2 billion economy. Despite its total output, per-capita income of $2,086 remains far below the world average. The economy is currently growing solidly, with GDP growth of +3.6%.",
+    "strengths": [
+      "Above-average GDP growth of +3.6%",
+      "Near-full employment — unemployment at just 1.4%"
+    ],
+    "risks": [
+      "Very low per-capita income — 11% of the world average"
+    ],
+    "didYouKnow": "GDP has more than doubled since 2006"
+  },
+  "SO": {
+    "overview": "Somalia has a $13 billion economy. Despite its total output, per-capita income of $661 remains far below the world average. The economy is currently growing steadily, with GDP growth of +3.0%.",
+    "strengths": [],
+    "risks": [
+      "Very high unemployment rate of 18.9%",
+      "Per-capita income is only 3% of the world average"
+    ],
+    "didYouKnow": "Per-capita income is less than 5% of the world average"
+  },
+  "ZA": {
+    "overview": "South Africa has a $427 billion economy. Its per-capita income of $6,598 is below the world average. The economy is currently growing steadily, with GDP growth of +1.1%.",
+    "strengths": [],
+    "risks": [
+      "Unemployment crisis — 32.4% of the labour force is out of work"
+    ],
+    "didYouKnow": "Unemployment is 3.6× the Africa regional average"
+  },
+  "KR": {
+    "overview": "Korea (Republic of) has a $1.9 trillion economy, ranked #13 globally by GDP. With a per-capita income of $36,227, it sits above the world average. The economy is currently growing steadily, with GDP growth of +1.0%.",
+    "strengths": [
+      "Near-full employment — unemployment at just 2.7%",
+      "Above-average per-capita income of $36,227"
+    ],
+    "risks": []
+  },
+  "ES": {
+    "overview": "Spain has a $1.9 trillion economy, ranked #12 globally by GDP. With a per-capita income of $38,627, it sits above the world average. The economy is currently growing steadily, with GDP growth of +2.8%.",
+    "strengths": [
+      "Above-average per-capita income of $38,627"
+    ],
+    "risks": [
+      "High unemployment at 10.4%, above the world average"
+    ]
+  },
+  "LK": {
+    "overview": "Sri Lanka has a $109 billion economy. Its per-capita income of $5,002 is below the world average. The economy is currently growing solidly, with GDP growth of +5.0%.",
+    "strengths": [
+      "Strong GDP growth at +5.0%",
+      "Low unemployment rate of 4.0%"
+    ],
+    "risks": [
+      "Deflation risk — prices are falling at 4.8% per year"
+    ],
+    "didYouKnow": "GDP has grown 7× since 1996"
+  },
+  "SD": {
+    "overview": "Sudan has a $60 billion economy. Despite its total output, per-capita income of $1,165 remains far below the world average. The economy is currently growing solidly, with GDP growth of +3.1%.",
+    "strengths": [],
+    "risks": [
+      "Per-capita income is only 6% of the world average"
+    ],
+    "didYouKnow": "Per-capita income is just 6% of the world average"
+  },
+  "SR": {
+    "overview": "Suriname has a $5 billion economy. Its per-capita income of $7,070 is below the world average. The economy is currently growing steadily, with GDP growth of +1.8%.",
+    "strengths": [],
+    "risks": [
+      "Elevated inflation at 9.2%"
+    ],
+    "didYouKnow": "GDP has grown 5× since 1996"
+  },
+  "SZ": {
+    "overview": "Swaziland has a $5 billion economy. Despite its total output, per-capita income of $4,108 remains far below the world average. The economy is currently growing solidly, with GDP growth of +4.2%.",
+    "strengths": [
+      "Strong GDP growth at +4.2%"
+    ],
+    "risks": [
+      "Unemployment crisis — 34.2% of the labour force is out of work"
+    ],
+    "didYouKnow": "Unemployment is 3.8× the Africa regional average"
+  },
+  "SE": {
+    "overview": "Sweden has a $669 billion economy, ranked #25 globally. Per-capita income of $63,133 is 3.2× the world average, placing it among the wealthiest nations. The economy is currently growing steadily, with GDP growth of +1.5%.",
+    "strengths": [
+      "Price stability with inflation at 0.7%",
+      "Very high per-capita income — 3.2× the world average"
+    ],
+    "risks": []
+  },
+  "CH": {
+    "overview": "Switzerland has a $1.0 trillion economy, ranked #20 globally. Per-capita income of $114,769 is 5.9× the world average, placing it among the wealthiest nations. The economy is currently growing steadily, with GDP growth of +1.3%.",
+    "strengths": [
+      "Low unemployment rate of 4.9%",
+      "Price stability with inflation at 0.2%",
+      "Very high per-capita income — 5.9× the world average"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has more than doubled since 2006"
+  },
+  "SY": {
+    "strengths": [],
+    "risks": [
+      "High unemployment at 13.6%, above the world average"
+    ],
+    "didYouKnow": "Unemployment is more than double the Asia regional average"
+  },
+  "TJ": {
+    "overview": "Tajikistan has a $18 billion economy. Despite its total output, per-capita income of $1,637 remains far below the world average. The economy is currently expanding rapidly, with GDP growth of +8.4%.",
+    "strengths": [
+      "Exceptional GDP growth of +8.4%"
+    ],
+    "risks": [
+      "Very low per-capita income — 8% of the world average"
+    ],
+    "didYouKnow": "GDP has grown 14× since 1996"
+  },
+  "TZ": {
+    "overview": "Tanzania, United Republic of has a $90 billion economy. Despite its total output, per-capita income of $1,319 remains far below the world average. The economy is currently growing solidly, with GDP growth of +5.9%.",
+    "strengths": [
+      "Strong GDP growth at +5.9%",
+      "Near-full employment — unemployment at just 1.6%",
+      "9 straight years of GDP growth"
+    ],
+    "risks": [
+      "Per-capita income is only 7% of the world average"
+    ],
+    "didYouKnow": "Per-capita income is just 7% of the world average"
+  },
+  "TH": {
+    "overview": "Thailand has a $577 billion economy, ranked #29 globally. Its per-capita income of $8,057 is below the world average. The economy is currently growing steadily, with GDP growth of +2.4%.",
+    "strengths": [
+      "Near-full employment — unemployment at just 0.8%"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has more than doubled since 2006"
+  },
+  "TL": {
+    "overview": "Timor-Leste has a $2 billion economy. Despite its total output, per-capita income of $1,341 remains far below the world average. The economy is currently expanding rapidly, with GDP growth of +7.0%.",
+    "strengths": [
+      "Strong GDP growth at +7.0%",
+      "Near-full employment — unemployment at just 1.6%",
+      "Price stability with inflation at 0.4%"
+    ],
+    "risks": [
+      "Per-capita income is only 7% of the world average",
+      "GDP is ~49% below its recent peak"
+    ],
+    "didYouKnow": "Per-capita income is just 7% of the world average"
+  },
+  "TG": {
+    "overview": "Togo has a $12 billion economy. Despite its total output, per-capita income of $1,384 remains far below the world average. The economy is currently expanding rapidly, with GDP growth of +6.3%.",
+    "strengths": [
+      "Strong GDP growth at +6.3%",
+      "Near-full employment — unemployment at just 2.0%",
+      "Price stability with inflation at 0.4%"
+    ],
+    "risks": [
+      "Per-capita income is only 7% of the world average"
+    ],
+    "didYouKnow": "Per-capita income is just 7% of the world average"
+  },
+  "TO": {
+    "overview": "Tonga has a $679 million economy. Its per-capita income of $6,547 is below the world average. The economy is currently growing steadily, with GDP growth of +2.8%.",
+    "strengths": [
+      "Near-full employment — unemployment at just 2.0%",
+      "8 straight years of GDP growth"
+    ],
+    "risks": [
+      "Elevated inflation at 5.6%"
+    ],
+    "didYouKnow": "GDP has more than doubled since 2006"
+  },
+  "TT": {
+    "overview": "Trinidad and Tobago has a $26 billion economy. Its per-capita income of $18,967 is below the world average. The economy is currently contracting slightly, with GDP growth of -0.8%.",
+    "strengths": [
+      "Low unemployment rate of 3.3%",
+      "Price stability with inflation at 1.0%"
+    ],
+    "risks": [
+      "GDP growth is negative at -0.8%"
+    ]
+  },
+  "TN": {
+    "overview": "Tunisia has a $58 billion economy. Despite its total output, per-capita income of $4,657 remains far below the world average. The economy is currently growing steadily, with GDP growth of +2.5%.",
+    "strengths": [],
+    "risks": [
+      "Elevated inflation at 5.2%",
+      "Very high unemployment rate of 15.1%"
+    ]
+  },
+  "TR": {
+    "overview": "Turkey has a $1.6 trillion economy, ranked #16 globally. Its per-capita income of $18,599 is below the world average. The economy is currently growing solidly, with GDP growth of +3.6%.",
+    "strengths": [
+      "Above-average GDP growth of +3.6%"
+    ],
+    "risks": [
+      "Very high inflation of 34.9%, sharply eroding purchasing power"
+    ],
+    "didYouKnow": "GDP has grown 5× since 1996"
+  },
+  "TM": {
+    "overview": "Turkmenistan has a $50 billion economy. Its per-capita income of $6,540 is below the world average. The economy is currently expanding rapidly, with GDP growth of +6.3%.",
+    "strengths": [
+      "Strong GDP growth at +6.3%",
+      "Low unemployment rate of 4.3%"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has grown 19× since 1996"
+  },
+  "TV": {
+    "overview": "Tuvalu has a $57 million economy. Its per-capita income of $6,041 is below the world average. The economy is currently growing steadily, with GDP growth of +1.6%.",
+    "strengths": [],
+    "risks": [],
+    "didYouKnow": "GDP has more than doubled since 2006"
+  },
+  "UG": {
+    "overview": "Uganda has a $62 billion economy. Despite its total output, per-capita income of $1,206 remains far below the world average. The economy is currently expanding rapidly, with GDP growth of +6.3%.",
+    "strengths": [
+      "Strong GDP growth at +6.3%",
+      "Near-full employment — unemployment at just 2.7%",
+      "8 straight years of GDP growth"
+    ],
+    "risks": [
+      "Per-capita income is only 6% of the world average"
+    ],
+    "didYouKnow": "Per-capita income is just 6% of the world average"
+  },
+  "UA": {
+    "overview": "Ukraine has a $214 billion economy. Its per-capita income of $5,866 is below the world average. The economy is currently growing steadily, with GDP growth of +1.8%.",
+    "strengths": [],
+    "risks": [
+      "High inflation of 12.7%, well above healthy levels"
+    ],
+    "didYouKnow": "GDP has more than doubled in the past decade"
+  },
+  "AE": {
+    "strengths": [
+      "Near-full employment — unemployment at just 2.2%",
+      "Price stability with inflation at 1.3%"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has grown 8× since 1996"
+  },
+  "GB": {
+    "overview": "United Kingdom of Great Britain and Northern Ireland has a $4.0 trillion economy, the #5 largest economy in the world. With a per-capita income of $57,602, it sits above the world average. The economy is currently growing steadily, with GDP growth of +1.4%.",
+    "strengths": [
+      "Low unemployment rate of 4.7%",
+      "Above-average per-capita income of $57,602",
+      "One of the five largest economies in the world"
+    ],
+    "risks": [],
+    "didYouKnow": "One of the world's 10 largest economies by GDP"
+  },
+  "US": {
+    "overview": "United States of America has a $30.8 trillion economy, the #1 largest economy in the world. Per-capita income of $90,027 is 4.6× the world average, placing it among the wealthiest nations. The economy is currently growing steadily, with GDP growth of +2.2%.",
+    "strengths": [
+      "Low unemployment rate of 4.2%",
+      "Very high per-capita income — 4.6× the world average",
+      "One of the five largest economies in the world"
+    ],
+    "risks": [],
+    "didYouKnow": "One of the world's three largest economies"
+  },
+  "UY": {
+    "overview": "Uruguay has a $85 billion economy. Its per-capita income of $25,216 is above the world average. The economy is currently growing steadily, with GDP growth of +1.8%.",
+    "strengths": [],
+    "risks": [],
+    "didYouKnow": "GDP has grown 4.2× since 2006"
+  },
+  "UZ": {
+    "overview": "Uzbekistan has a $147 billion economy. Despite its total output, per-capita income of $3,968 remains far below the world average. The economy is currently expanding rapidly, with GDP growth of +7.7%.",
+    "strengths": [
+      "Exceptional GDP growth of +7.7%",
+      "Low unemployment rate of 4.6%"
+    ],
+    "risks": [
+      "Elevated inflation at 8.8%"
+    ],
+    "didYouKnow": "GDP has grown 9× since 1996"
+  },
+  "VU": {
+    "overview": "Vanuatu has a $1 billion economy. Despite its total output, per-capita income of $4,039 remains far below the world average. The economy is currently growing solidly, with GDP growth of +3.1%.",
+    "strengths": [
+      "Price stability with inflation at 0.7%"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has more than doubled since 2006"
+  },
+  "VE": {
+    "overview": "Venezuela (Bolivarian Republic of) has a $100 billion economy. Despite its total output, per-capita income of $3,495 remains far below the world average. The economy is currently growing steadily, with GDP growth of +1.6%.",
+    "strengths": [],
+    "risks": [
+      "Very low per-capita income — 18% of the world average"
+    ]
+  },
+  "VN": {
+    "overview": "Vietnam has a $515 billion economy. Its per-capita income of $5,066 is below the world average. The economy is currently expanding rapidly, with GDP growth of +8.0%.",
+    "strengths": [
+      "Exceptional GDP growth of +8.0%",
+      "Near-full employment — unemployment at just 1.5%",
+      "Uninterrupted GDP growth for 34 consecutive years"
+    ],
+    "risks": [],
+    "didYouKnow": "GDP has grown 19× since 1996"
+  },
+  "YE": {
+    "strengths": [],
+    "risks": [
+      "Very high unemployment rate of 17.3%",
+      "GDP is ~50% below its recent peak"
+    ],
+    "didYouKnow": "Unemployment is 3.3× the Asia regional average"
+  },
+  "ZM": {
+    "overview": "Zambia has a $29 billion economy. Despite its total output, per-capita income of $1,318 remains far below the world average. The economy is currently growing solidly, with GDP growth of +3.8%.",
+    "strengths": [
+      "Above-average GDP growth of +3.8%"
+    ],
+    "risks": [
+      "High inflation of 13.9%, well above healthy levels",
+      "Per-capita income is only 7% of the world average"
+    ],
+    "didYouKnow": "Per-capita income is just 7% of the world average"
+  },
+  "ZW": {
+    "overview": "Zimbabwe has a $51 billion economy. Despite its total output, per-capita income of $3,021 remains far below the world average. The economy is currently expanding rapidly, with GDP growth of +8.1%.",
+    "strengths": [
+      "Exceptional GDP growth of +8.1%"
+    ],
+    "risks": [
+      "Very low per-capita income — 15% of the world average"
+    ],
+    "didYouKnow": "GDP has grown 7.6× since 2006"
+  }
+}
