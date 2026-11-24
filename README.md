@@ -2,7 +2,7 @@
 
 An interactive world-economy explorer — browse economic indicators, compare countries, and model global shocks on a live 3D globe.
 
-**Live:** _link coming soon_
+**Live:** https://atlas-ap.vercel.app
 
 ![Screenshot](docs/screenshot.png)
 
