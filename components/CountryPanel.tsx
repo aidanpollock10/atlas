@@ -19,6 +19,7 @@ import {
   formatUsdPerUnit,
 } from '@/lib/fx';
 import { getCountryTrade } from '@/lib/trade';
+import type { IndicatorMeta } from '@/lib/data';
 import {
   countries,
   Country,
@@ -328,13 +329,14 @@ function FiscalSection({ country }: { country: Country }) {
       {/* Stats row */}
       <div className="grid grid-cols-2 gap-2.5">
         {debt !== null && (
-          <StatCard label="Debt / GDP" value={formatPercent(debt)} color={debtColor(debt)} />
+          <StatCard label="Debt / GDP" value={formatPercent(debt)} color={debtColor(debt)} meta={country.meta?.debtToGDP} />
         )}
         {budget !== null && (
           <StatCard
             label="Budget Balance"
             value={formatPercentSigned(budget)}
             color={budgetBalanceColor(budget)}
+            meta={country.meta?.budgetBalance}
           />
         )}
         {currAcc !== null && (
@@ -342,6 +344,7 @@ function FiscalSection({ country }: { country: Country }) {
             label="Current Account"
             value={formatPercentSigned(currAcc)}
             color={currentAccountColor(currAcc)}
+            meta={country.meta?.currentAccount}
           />
         )}
         {interest !== null && (
@@ -527,20 +530,32 @@ function TradeSection({ country }: { country: Country }) {
 
 // ── Stat card ─────────────────────────────────────────────────────────────────
 
-function StatCard({ label, value, color }: { label: string; value: string; color?: IndicatorColor }) {
+function StatCard({
+  label, value, color, meta,
+}: {
+  label: string; value: string; color?: IndicatorColor;
+  meta?: IndicatorMeta | null;
+}) {
   const cls =
     color === 'green' ? 'text-emerald-400'
     : color === 'amber' ? 'text-amber-400'
     : color === 'red'   ? 'text-red-400'
     : 'text-white';
 
+  const yearLabel = meta
+    ? `${meta.year}${meta.est ? ' est.' : ''}`
+    : null;
+
   return (
     <div
       className="rounded-lg p-3 flex flex-col gap-1"
-      style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.07)' }}
+      style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.07)' }}
     >
       <span className="text-xs uppercase tracking-wider leading-none" style={{ color: '#475569' }}>{label}</span>
       <span className={`text-base font-bold ${cls} leading-tight`}>{value}</span>
+      {yearLabel && (
+        <span className="text-xs leading-none" style={{ color: '#334155' }}>{yearLabel}</span>
+      )}
     </div>
   );
 }
@@ -645,22 +660,25 @@ export default function CountryPanel({ country, onClose }: CountryPanelProps) {
                 <SectionLabel>Key Statistics</SectionLabel>
                 <div className="grid grid-cols-2 gap-2.5">
                   <StatCard label="Population"    value={formatPopulation(country.population)} />
-                  <StatCard label="GDP (Total)"   value={formatGDP(country.gdp)} />
-                  <StatCard label="GDP / Capita"  value={formatGDPPerCapita(country.gdpPerCapita)} />
+                  <StatCard label="GDP (Total)"   value={formatGDP(country.gdp)} meta={country.meta?.gdp} />
+                  <StatCard label="GDP / Capita"  value={formatGDPPerCapita(country.gdpPerCapita)} meta={country.meta?.gdpPerCapita} />
                   <StatCard
                     label="GDP Growth"
                     value={formatPercentSigned(country.gdpGrowth)}
                     color={gdpGrowthColor(country.gdpGrowth)}
+                    meta={country.meta?.gdpGrowth}
                   />
                   <StatCard
                     label="Inflation"
                     value={formatPercent(country.inflation)}
                     color={inflationColor(country.inflation)}
+                    meta={country.meta?.inflation}
                   />
                   <StatCard
                     label="Unemployment"
                     value={formatPercent(country.unemployment)}
                     color={unemploymentColor(country.unemployment)}
+                    meta={country.meta?.unemployment}
                   />
                 </div>
               </section>

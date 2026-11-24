@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "fetch-data": "tsx scripts/fetch-data.ts",
     "generate-insights": "tsx scripts/generate-insights.ts",
     "fetch-fx": "tsx scripts/fetch-fx.ts",
     "fetch-trade": "tsx scripts/fetch-trade.ts"

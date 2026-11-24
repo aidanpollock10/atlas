@@ -1,0 +1,10 @@
+{
+  "fetchedAt": "2026-11-24",
+  "gdpHistoryThrough": 2026,
+  "sources": {
+    "primary": "IMF World Economic Outlook DataMapper API",
+    "fallback": "World Bank Open Data",
+    "trade": "OEC / BACI",
+    "fx": "Frankfurter (ECB) + open.er-api.com + World Bank PA.NUS.FCRF"
+  }
+}

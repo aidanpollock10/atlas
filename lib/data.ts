@@ -1,5 +1,12 @@
 import countriesData from '@/data/countries.json';
 
+export interface IndicatorMeta {
+  year: number;
+  /** true when this is an IMF estimate for the current year (not yet finalized) */
+  est:  boolean;
+  src:  'IMF' | 'WB';
+}
+
 export interface Country {
   code: string;
   code3: string;
@@ -25,6 +32,16 @@ export interface Country {
   budgetBalance?: number | null;     // Net lending (+) / borrowing (−) % GDP (IMF GGXCNL_NGDP)
   currentAccount?: number | null;    // Current-account balance % GDP (IMF BCA_NGDPD)
   interestRate?: number | null;      // Commercial lending rate % (World Bank FR.INR.LEND)
+  meta?: {
+    gdp?:           IndicatorMeta | null;
+    gdpPerCapita?:  IndicatorMeta | null;
+    gdpGrowth?:     IndicatorMeta | null;
+    inflation?:     IndicatorMeta | null;
+    unemployment?:  IndicatorMeta | null;
+    debtToGDP?:     IndicatorMeta | null;
+    budgetBalance?:  IndicatorMeta | null;
+    currentAccount?: IndicatorMeta | null;
+  };
 }
 
 export const countries: Country[] = countriesData as Country[];

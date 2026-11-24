@@ -1,3 +1,7 @@
+import metaRaw from '@/data/meta.json';
+
+const meta = metaRaw as { fetchedAt: string };
+
 export default function Footer() {
   return (
     <footer
@@ -12,10 +16,17 @@ export default function Footer() {
             World Bank
           </a>
           {' · '}
+          <a href="https://www.imf.org/en/Publications/WEO" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-gray-400 underline underline-offset-2" style={{ color: '#475569' }}>
+            IMF WEO
+          </a>
+          {' · '}
           <a href="https://restcountries.com" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-gray-400 underline underline-offset-2" style={{ color: '#475569' }}>
             REST Countries
           </a>
-          {' · All figures USD · Most recent year'}
+          {' · All figures USD'}
+        </span>
+        <span className="text-xs" style={{ color: '#334155' }}>
+          Data updated {meta.fetchedAt}
         </span>
       </div>
     </footer>

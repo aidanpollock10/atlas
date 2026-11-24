@@ -56,7 +56,8 @@ interface OecResponse {
 
 const BASE_OEC  = 'https://api.oec.world/tesseract/data.jsonrecords';
 const CUBE      = 'trade_i_baci_a_92';
-const YEAR      = 2022;
+const YEAR      = 2023;   // try 2023; script falls back to 2022 if no rows returned
+const YEAR_FB   = 2022;   // fallback year
 const LIMIT     = 50_000; // larger than the ~32k total — fetches everything in one call
 const TOP_N     = 5;
 
@@ -83,17 +84,26 @@ async function main() {
   const validISO3  = new Set(countriesRaw.map(c => c.code3).filter(Boolean));
   const nameByISO3 = new Map(countriesRaw.map(c => [c.code3, c.name]));
 
-  console.log(`=== fetch-trade  (BACI ${YEAR} via OEC Tesseract API) ===\n`);
+  console.log(`=== fetch-trade  (BACI ${YEAR}/${YEAR_FB} via OEC Tesseract API) ===\n`);
   console.log(`Known countries: ${validISO3.size}`);
 
   // ── Fetch all bilateral trade pairs (single request) ─────────────────────
   // The OEC Tesseract API offset parameter does not advance on this cube;
   // using limit > total retrieves everything in one call (~700 ms).
   console.log('\nFetching all bilateral pairs...');
-  const url     = `${BASE_OEC}?cube=${CUBE}&drilldowns=Exporter+Country%2CImporter+Country&measures=Trade+Value&Year=${YEAR}&limit=${LIMIT}`;
-  const rawResp = await fetchJSON(url) as OecResponse;
-  const allRows = rawResp.data ?? [];
-  const total   = rawResp.page?.total ?? allRows.length;
+  // Try YEAR first; fall back to YEAR_FB if no rows come back
+  let usedYear = YEAR;
+  let url = `${BASE_OEC}?cube=${CUBE}&drilldowns=Exporter+Country%2CImporter+Country&measures=Trade+Value&Year=${YEAR}&limit=${LIMIT}`;
+  let rawResp = await fetchJSON(url) as OecResponse;
+  let allRows = rawResp.data ?? [];
+  if (allRows.length === 0) {
+    console.log(`No data for ${YEAR}, falling back to ${YEAR_FB}…`);
+    usedYear = YEAR_FB;
+    url = `${BASE_OEC}?cube=${CUBE}&drilldowns=Exporter+Country%2CImporter+Country&measures=Trade+Value&Year=${YEAR_FB}&limit=${LIMIT}`;
+    rawResp = await fetchJSON(url) as OecResponse;
+    allRows = rawResp.data ?? [];
+  }
+  const total = rawResp.page?.total ?? allRows.length;
 
   console.log(`Fetched ${allRows.length} rows (API total: ${total})`);
 
@@ -168,7 +178,7 @@ async function main() {
     const { total: imports_, partners: importPartners } = topN(impMap);
 
     output[iso3] = {
-      year: YEAR,
+      year: usedYear,
       exports: exports_,
       imports: imports_,
       exportPartners,
