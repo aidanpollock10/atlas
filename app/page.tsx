@@ -5,19 +5,27 @@ import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import Search from '@/components/Search';
 import { countries, Country } from '@/lib/data';
+import { usePathname } from 'next/navigation';
 
 const Globe = dynamic(() => import('@/components/Globe'), {
   ssr: false,
   loading: () => (
     <div className="w-full h-full flex items-center justify-center">
-      <div className="w-14 h-14 rounded-full border-2 border-blue-500/20 border-t-blue-400 animate-spin" />
+      <div className="w-12 h-12 rounded-full border-2 border-blue-500/20 border-t-blue-400 animate-spin" />
     </div>
   ),
 });
 
+const NAV_LINKS = [
+  { href: '/rankings',  label: 'Rankings'  },
+  { href: '/compare',   label: 'Compare'   },
+  { href: '/scenarios', label: 'Scenarios' },
+] as const;
+
 export default function Home() {
   const [selectedCountry, setSelectedCountry] = useState<Country | null>(null);
   const flyToRef = useRef<((country: Country) => void) | null>(null);
+  const pathname = usePathname();
 
   const handleSelect = useCallback((country: Country) => {
     setSelectedCountry(country);
@@ -26,7 +34,6 @@ export default function Home() {
 
   const handleClose = useCallback(() => setSelectedCountry(null), []);
 
-  // Handle ?country=XX navigation from the rankings / compare pages
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const code = params.get('country');
@@ -38,13 +45,19 @@ export default function Home() {
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
-    <main className="relative w-screen h-screen bg-black overflow-hidden">
-      {/* ── Top bar ─────────────────────────────────────────────────── */}
-      <div className="absolute top-0 left-0 right-0 z-10 flex items-center gap-3 px-4 sm:px-8 pt-4 sm:pt-5">
-        {/* Logo */}
-        <div className="flex-shrink-0 pointer-events-none select-none">
-          <h1 className="text-xl sm:text-2xl font-bold text-white tracking-widest leading-none">ATLAS</h1>
-          <p className="text-gray-500 text-xs mt-0.5 hidden sm:block">World Economy Explorer</p>
+    <main className="relative w-screen h-screen overflow-hidden" style={{ background: '#07090f' }}>
+      {/* ── Top bar ──────────────────────────────────────────────────── */}
+      <div
+        className="absolute top-0 left-0 right-0 z-10 flex items-center gap-4 px-5 sm:px-7 h-12"
+        style={{
+          background:    'rgba(7,9,15,0.9)',
+          borderBottom:  '1px solid rgba(255,255,255,0.07)',
+          backdropFilter:'blur(12px)',
+        }}
+      >
+        {/* Wordmark */}
+        <div className="flex-shrink-0 select-none">
+          <span className="text-sm font-bold tracking-[0.2em] text-white">ATLAS</span>
         </div>
 
         {/* Search — centred */}
@@ -52,15 +65,22 @@ export default function Home() {
           <Search onSelect={handleSelect} />
         </div>
 
-        {/* Nav links — hidden on small screens */}
-        <div className="hidden sm:flex items-center gap-2 flex-shrink-0">
-          <NavLink href="/rankings">Rankings</NavLink>
-          <NavLink href="/compare">Compare</NavLink>
-          <NavLink href="/scenarios">Scenarios</NavLink>
-        </div>
+        {/* Nav links */}
+        <nav className="hidden sm:flex items-center gap-0.5 flex-shrink-0">
+          {NAV_LINKS.map(({ href, label }) => (
+            <Link
+              key={href}
+              href={href}
+              className="px-3 py-1.5 rounded-md text-sm transition-colors"
+              style={{ color: pathname === href ? '#f1f5f9' : '#64748b' }}
+            >
+              {label}
+            </Link>
+          ))}
+        </nav>
       </div>
 
-      {/* ── Globe ───────────────────────────────────────────────────── */}
+      {/* ── Globe ──────────────────────────────────────────────────── */}
       <Globe
         selectedCountry={selectedCountry}
         onSelectCountry={setSelectedCountry}
@@ -68,17 +88,5 @@ export default function Home() {
         flyToRef={flyToRef}
       />
     </main>
-  );
-}
-
-function NavLink({ href, children }: { href: string; children: React.ReactNode }) {
-  return (
-    <Link
-      href={href}
-      className="text-sm text-gray-400 hover:text-white transition-colors px-3 py-1.5 rounded-lg whitespace-nowrap"
-      style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)' }}
-    >
-      {children} ↗
-    </Link>
   );
 }

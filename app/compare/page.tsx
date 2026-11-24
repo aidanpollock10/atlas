@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useMemo, useEffect, useRef, useCallback, KeyboardEvent } from 'react';
-import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import {
   ResponsiveContainer,
@@ -23,6 +22,7 @@ import {
   formatPopulation,
 } from '@/lib/data';
 import Footer from '@/components/Footer';
+import NavBar from '@/components/NavBar';
 
 // ── Constants ─────────────────────────────────────────────────────────────────
 
@@ -561,37 +561,15 @@ export default function ComparePage() {
   return (
     <div className="min-h-screen bg-[#060a14] text-white">
 
-      {/* ── Header ──────────────────────────────────────────────────────── */}
-      <div
-        className="sticky top-0 z-20 flex items-center gap-4 px-8 py-3"
-        style={{ background: 'rgba(6,10,20,0.96)', borderBottom: '1px solid rgba(255,255,255,0.07)', backdropFilter: 'blur(16px)' }}
-      >
-        <Link href="/" className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors">
-          <svg className="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
-            <path fillRule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clipRule="evenodd"/>
-          </svg>
-          Globe
-        </Link>
-        <div className="w-px h-4 bg-gray-700" />
-        <span className="text-lg font-bold tracking-widest text-white select-none">ATLAS</span>
-        <div className="w-px h-4 bg-gray-700" />
-        <h1 className="text-sm font-semibold text-gray-300">Compare Countries</h1>
-        <Link
-          href="/rankings"
-          className="text-sm text-gray-500 hover:text-white transition-colors px-2.5 py-1 rounded-lg ml-1"
-          style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)' }}
-        >
-          Rankings ↗
-        </Link>
-        {codes.length > 0 && (
-          <span className="ml-auto text-xs text-gray-600">
-            Share: <code className="text-gray-500">/compare?c={codes.join(',')}</code>
-          </span>
-        )}
-      </div>
+      <NavBar />
 
       {/* ── Content ─────────────────────────────────────────────────────── */}
       <div className="px-8 py-8 max-w-6xl mx-auto">
+
+        <div className="mb-6">
+          <h1 className="text-xl font-semibold text-white">Compare Countries</h1>
+          <p className="text-sm mt-1" style={{ color: '#64748b' }}>Side-by-side comparison of up to 4 economies</p>
+        </div>
 
         {/* Country picker */}
         <section className="mb-10">

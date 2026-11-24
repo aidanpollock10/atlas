@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useMemo } from 'react';
-import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import {
   countries,
@@ -13,6 +12,7 @@ import {
   formatPopulation,
 } from '@/lib/data';
 import Footer from '@/components/Footer';
+import NavBar from '@/components/NavBar';
 
 // ── Types ────────────────────────────────────────────────────────────────────
 
@@ -90,46 +90,14 @@ export default function RankingsPage() {
   return (
     <div className="min-h-screen bg-[#060a14] text-white">
 
-      {/* ── Sticky header ─────────────────────────────────────────────── */}
-      <div
-        className="sticky top-0 z-20 flex items-center gap-4 px-8 py-3"
-        style={{
-          background: 'rgba(6,10,20,0.96)',
-          borderBottom: '1px solid rgba(255,255,255,0.07)',
-          backdropFilter: 'blur(16px)',
-        }}
-      >
-        <Link href="/" className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors">
-          <svg className="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
-            <path fillRule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clipRule="evenodd" />
-          </svg>
-          Globe
-        </Link>
-
-        <div className="w-px h-4 bg-gray-700 flex-shrink-0" />
-
-        <span className="text-lg font-bold tracking-widest text-white select-none">ATLAS</span>
-
-        <div className="w-px h-4 bg-gray-700 flex-shrink-0" />
-
-        <h1 className="text-sm font-semibold text-gray-300">Country Rankings</h1>
-
-        <Link
-          href="/compare"
-          className="text-sm text-gray-500 hover:text-white transition-colors px-2.5 py-1 rounded-lg"
-          style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)' }}
-        >
-          Compare ↗
-        </Link>
-
-        <span className="ml-auto text-xs text-gray-600">
-          {sorted.length} countries · sorted by {activeCol.label}{' '}
-          ({sortDir === 'desc' ? 'highest first' : 'lowest first'})
-        </span>
-      </div>
+      <NavBar />
 
       {/* ── Table ─────────────────────────────────────────────────────── */}
       <div className="px-8 py-6">
+        <div className="mb-6">
+          <h1 className="text-xl font-semibold text-white">Country Rankings</h1>
+          <p className="text-sm mt-1" style={{ color: '#64748b' }}>Sort by any indicator · click a row to view on the globe</p>
+        </div>
         <div
           className="overflow-x-auto rounded-2xl"
           style={{ border: '1px solid rgba(255,255,255,0.07)' }}
@@ -182,7 +150,7 @@ export default function RankingsPage() {
                     key={country.code}
                     onClick={() => router.push(`/?country=${country.code}`)}
                     className={`cursor-pointer transition-all group ${
-                      isMedal ? MEDAL_RING[medalIdx] : 'hover:bg-white/[0.03]'
+                      isMedal ? MEDAL_RING[medalIdx] + ' hover:bg-white/[0.025]' : 'hover:bg-white/[0.025]'
                     }`}
                     style={{ borderBottom: '1px solid rgba(255,255,255,0.04)' }}
                   >

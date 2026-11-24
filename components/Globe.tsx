@@ -402,14 +402,33 @@ export default function GlobeComponent({
       if (!mounted || !containerRef.current) return;
 
       const { clientWidth: w, clientHeight: h } = containerRef.current;
+      // Generate a subtle sparse star field (fewer, dimmer stars than the default night-sky.png)
+      const starfieldUrl = (() => {
+        const c = document.createElement('canvas');
+        c.width = 1024; c.height = 512;
+        const ctx2 = c.getContext('2d')!;
+        ctx2.fillStyle = '#07090f';
+        ctx2.fillRect(0, 0, 1024, 512);
+        for (let i = 0; i < 280; i++) {
+          const sx = Math.random() * 1024;
+          const sy = Math.random() * 512;
+          const sr = Math.random() * 0.55 + 0.1;
+          const sa = Math.random() * 0.22 + 0.04;
+          ctx2.beginPath();
+          ctx2.arc(sx, sy, sr, 0, Math.PI * 2);
+          ctx2.fillStyle = `rgba(200,215,255,${sa.toFixed(3)})`;
+          ctx2.fill();
+        }
+        return c.toDataURL();
+      })();
       const globe = new GlobeLib(containerRef.current);
 
       globe
         .width(w).height(h)
         .globeImageUrl('//unpkg.com/three-globe/example/img/earth-night.jpg')
-        .backgroundImageUrl('//unpkg.com/three-globe/example/img/night-sky.png')
+        .backgroundImageUrl(starfieldUrl)
         .atmosphereColor('#3a86ff')
-        .atmosphereAltitude(0.15)
+        .atmosphereAltitude(0.12)
         .polygonsData(features)
         .polygonAltitude((d) => (d === hoveredRef.current ? 0.06 : 0.01))
         .polygonCapColor((d) => getPolygonCapColor(d, hoveredRef.current, layerRef.current, scenarioImpactsRef.current))
@@ -546,23 +565,24 @@ export default function GlobeComponent({
       {/* Country detail panel */}
       <CountryPanel country={selectedCountry} onClose={onClose} />
 
-      {/* Layer switcher — top-left, below nav bar */}
+      {/* Layer switcher — top-left, below nav */}
       {!scenarioMode && (
         <div
-          className="absolute left-4 z-10 rounded-xl px-3 py-2.5"
-          style={{ top: '72px', background: 'rgba(10,20,40,0.88)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(8px)' }}
+          className="absolute left-4 z-10 rounded-xl p-3"
+          style={{ top: '60px', background: 'rgba(7,9,15,0.9)', border: '1px solid rgba(255,255,255,0.08)', backdropFilter: 'blur(10px)' }}
         >
-          <div className="text-gray-500 text-xs font-semibold uppercase tracking-wider mb-2">Layer</div>
+          <div className="text-xs font-semibold uppercase tracking-widest mb-2.5" style={{ color: '#475569', letterSpacing: '0.12em' }}>Layer</div>
           <div className="grid grid-cols-2 gap-1">
             {(Object.keys(LAYER_LABELS) as GlobeLayer[]).map((l) => (
               <button
                 key={l}
                 onClick={() => setLayer(l)}
-                className="text-xs px-2 py-1 rounded-md transition-colors text-left whitespace-nowrap"
+                className="text-xs px-2 py-1.5 rounded-md transition-all duration-150 text-left whitespace-nowrap"
                 style={{
-                  background: layer === l ? 'rgba(58,134,255,0.25)' : 'rgba(255,255,255,0.04)',
-                  border: `1px solid ${layer === l ? 'rgba(58,134,255,0.5)' : 'rgba(255,255,255,0.08)'}`,
-                  color: layer === l ? '#93c5fd' : '#9ca3af',
+                  background: layer === l ? 'rgba(58,134,255,0.18)' : 'rgba(255,255,255,0.03)',
+                  border:     `1px solid ${layer === l ? 'rgba(58,134,255,0.45)' : 'rgba(255,255,255,0.06)'}`,
+                  color:      layer === l ? '#93c5fd' : '#64748b',
+                  fontWeight: layer === l ? 500 : 400,
                 }}
               >
                 {LAYER_LABELS[l]}
@@ -572,59 +592,56 @@ export default function GlobeComponent({
         </div>
       )}
 
-      {/* Legend — bottom-left */}
-      {scenarioMode ? (
-        <div
-          className="absolute bottom-6 left-6 z-10 rounded-lg px-3 py-2 text-xs"
-          style={{ background: 'rgba(10,20,40,0.85)', border: '1px solid rgba(255,255,255,0.1)' }}
-        >
-          <div className="text-gray-400 mb-2 font-semibold uppercase tracking-wider text-xs">GDP Growth Impact</div>
-          <div className="space-y-1">
-            {[
-              { color: 'rgba(20,180,80,0.85)',  label: '> +3 pp (strong boost)' },
-              { color: 'rgba(60,150,80,0.65)',  label: '+0.5–3 pp (moderate boost)' },
-              { color: 'rgba(90,90,90,0.50)',   label: '±0.1 pp (neutral)' },
-              { color: 'rgba(180,55,40,0.65)',  label: '−0.5–3 pp (moderate hit)' },
-              { color: 'rgba(220,15,15,0.85)',  label: '< −3 pp (severe hit)' },
-              { color: 'rgba(50,80,120,0.80)',  label: 'No GDP data' },
-            ].map(item => <LegendRow key={item.label} color={item.color} label={item.label} />)}
-          </div>
-        </div>
-      ) : (
-        <div
-          className="absolute bottom-6 left-6 z-10 rounded-lg px-3 py-2 text-xs"
-          style={{ background: 'rgba(10,20,40,0.85)', border: '1px solid rgba(255,255,255,0.1)' }}
-        >
-          <div className="text-gray-400 mb-2 font-semibold uppercase tracking-wider text-xs">
-            {LAYER_LABELS[layer]}
-          </div>
-          <div className="space-y-1">
-            {LEGENDS[layer].map((item) => (
-              <LegendRow key={item.label} color={item.color} label={item.label} />
-            ))}
-          </div>
-        </div>
-      )}
+      {/* Bottom-left: legend */}
+      <div
+        className="absolute bottom-5 left-4 z-10 rounded-xl p-3 text-xs"
+        style={{ background: 'rgba(7,9,15,0.9)', border: '1px solid rgba(255,255,255,0.08)', backdropFilter: 'blur(10px)', maxWidth: 200 }}
+      >
+        {scenarioMode ? (
+          <>
+            <div className="font-semibold uppercase tracking-widest mb-2.5" style={{ color: '#475569', letterSpacing: '0.12em', fontSize: 10 }}>GDP Impact</div>
+            <div className="space-y-1.5">
+              {[
+                { color: 'rgba(20,180,80,0.85)',  label: '> +3 pp' },
+                { color: 'rgba(60,150,80,0.65)',  label: '+0.5–3 pp' },
+                { color: 'rgba(90,90,90,0.50)',   label: '±0.1 pp' },
+                { color: 'rgba(180,55,40,0.65)',  label: '−0.5–3 pp' },
+                { color: 'rgba(220,15,15,0.85)',  label: '< −3 pp' },
+                { color: 'rgba(50,80,120,0.80)',  label: 'No data' },
+              ].map(item => <LegendRow key={item.label} color={item.color} label={item.label} />)}
+            </div>
+          </>
+        ) : (
+          <>
+            <div className="font-semibold uppercase tracking-widest mb-2.5" style={{ color: '#475569', letterSpacing: '0.12em', fontSize: 10 }}>
+              {LAYER_LABELS[layer]}
+            </div>
+            <div className="space-y-1.5">
+              {LEGENDS[layer].map((item) => (
+                <LegendRow key={item.label} color={item.color} label={item.label} />
+              ))}
+            </div>
+          </>
+        )}
+      </div>
 
-      {/* Bottom-right: rotation toggle + hint */}
-      <div className="absolute bottom-6 right-6 z-10 flex flex-col items-end gap-2">
+      {/* Bottom-right: controls group */}
+      <div
+        className="absolute bottom-5 right-4 z-10 rounded-xl px-3 py-2.5 flex flex-col items-end gap-2.5"
+        style={{ background: 'rgba(7,9,15,0.9)', border: '1px solid rgba(255,255,255,0.08)', backdropFilter: 'blur(10px)' }}
+      >
         <button
           onClick={() => setAutoRotateEnabled((v) => !v)}
           title={autoRotateEnabled ? 'Pause auto-rotation' : 'Enable auto-rotation'}
-          className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-xs transition-colors select-none"
-          style={{
-            background: autoRotateEnabled ? 'rgba(58,134,255,0.15)' : 'rgba(255,255,255,0.06)',
-            border: `1px solid ${autoRotateEnabled ? 'rgba(58,134,255,0.4)' : 'rgba(255,255,255,0.1)'}`,
-            color: autoRotateEnabled ? '#93c5fd' : '#6b7280',
-          }}
+          className="flex items-center gap-2 text-xs transition-colors duration-150 select-none"
+          style={{ color: autoRotateEnabled ? '#93c5fd' : '#475569' }}
         >
           {autoRotateEnabled ? <PauseIcon /> : <PlayIcon />}
           <span>{autoRotateEnabled ? 'Rotating' : 'Paused'}</span>
         </button>
-
-        <div className="text-xs text-gray-600 text-right pointer-events-none">
-          <div>Click a country for details</div>
-          <div>Drag to rotate · Scroll to zoom</div>
+        <div className="text-xs text-right leading-relaxed" style={{ color: '#334155' }}>
+          <div>Click · select country</div>
+          <div>Drag · rotate  ·  Scroll · zoom</div>
         </div>
       </div>
     </div>

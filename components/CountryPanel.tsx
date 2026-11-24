@@ -539,7 +539,7 @@ function StatCard({ label, value, color }: { label: string; value: string; color
       className="rounded-lg p-3 flex flex-col gap-1"
       style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.07)' }}
     >
-      <span className="text-xs text-gray-500 uppercase tracking-wider leading-none">{label}</span>
+      <span className="text-xs uppercase tracking-wider leading-none" style={{ color: '#475569' }}>{label}</span>
       <span className={`text-base font-bold ${cls} leading-tight`}>{value}</span>
     </div>
   );
@@ -596,10 +596,10 @@ export default function CountryPanel({ country, onClose }: CountryPanelProps) {
             : 'translate-y-full sm:translate-y-0 sm:translate-x-full',
         ].join(' ')}
         style={{
-          background: 'rgba(8,14,28,0.97)',
+          background: 'rgba(7,9,15,0.98)',
           backdropFilter: 'blur(16px)',
-          borderTop: '1px solid rgba(58,134,255,0.2)',
-          borderLeft: '1px solid rgba(58,134,255,0.1)',
+          borderTop: '1px solid rgba(255,255,255,0.08)',
+          borderLeft: '1px solid rgba(255,255,255,0.08)',
         }}
         onWheel={(e) => e.stopPropagation()}
       >
@@ -822,9 +822,12 @@ function InsightsSection({ countryCode }: { countryCode: string }) {
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-widest mb-3">
-      {children}
-    </h3>
+    <div className="flex items-center gap-3 mb-4">
+      <h3 className="text-xs font-semibold uppercase tracking-widest whitespace-nowrap flex-shrink-0" style={{ color: '#475569', letterSpacing: '0.12em' }}>
+        {children}
+      </h3>
+      <div className="flex-1 h-px" style={{ background: 'rgba(255,255,255,0.06)' }} />
+    </div>
   );
 }
 

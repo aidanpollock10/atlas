@@ -1,32 +1,21 @@
 export default function Footer() {
   return (
     <footer
-      className="mt-auto px-8 py-8 text-xs text-gray-700"
-      style={{ borderTop: '1px solid rgba(255,255,255,0.05)' }}
+      className="mt-auto px-8 py-6"
+      style={{ borderTop: '1px solid rgba(255,255,255,0.06)' }}
     >
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
-        <span className="text-gray-500 font-semibold tracking-widest">ATLAS</span>
-        <span className="text-center">
-          Economic data:{' '}
-          <a
-            href="https://data.worldbank.org"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-600 hover:text-gray-400 underline transition-colors"
-          >
-            World Bank Open Data
+        <span className="text-xs font-bold tracking-[0.2em]" style={{ color: '#334155' }}>ATLAS</span>
+        <span className="text-xs text-center" style={{ color: '#334155' }}>
+          Data:{' '}
+          <a href="https://data.worldbank.org" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-gray-400 underline underline-offset-2" style={{ color: '#475569' }}>
+            World Bank
           </a>
-          {' '}·{' '}
-          Country metadata:{' '}
-          <a
-            href="https://restcountries.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-600 hover:text-gray-400 underline transition-colors"
-          >
+          {' · '}
+          <a href="https://restcountries.com" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-gray-400 underline underline-offset-2" style={{ color: '#475569' }}>
             REST Countries
           </a>
-          {' '}· All figures in USD · Most recent available year
+          {' · All figures USD · Most recent year'}
         </span>
       </div>
     </footer>

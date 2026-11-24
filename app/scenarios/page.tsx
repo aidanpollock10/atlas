@@ -2,8 +2,8 @@
 
 import { useMemo, useState } from 'react';
 import dynamic from 'next/dynamic';
-import Link from 'next/link';
 import { MutableRefObject, useRef } from 'react';
+import NavBar from '@/components/NavBar';
 import { Country } from '@/lib/data';
 import {
   computeImpacts,
@@ -128,34 +128,7 @@ export default function ScenariosPage() {
   return (
     <div className="flex flex-col h-screen bg-[#060a14] text-white overflow-hidden">
 
-      {/* ── Header ──────────────────────────────────────────────────────── */}
-      <div
-        className="flex-shrink-0 flex items-center gap-4 px-6 py-3 z-20"
-        style={{
-          background: 'rgba(6,10,20,0.96)',
-          borderBottom: '1px solid rgba(255,255,255,0.07)',
-          backdropFilter: 'blur(16px)',
-        }}
-      >
-        <Link
-          href="/"
-          className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"
-        >
-          <svg className="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
-            <path fillRule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clipRule="evenodd" />
-          </svg>
-          Globe
-        </Link>
-        <div className="w-px h-4 bg-gray-700 flex-shrink-0" />
-        <span className="text-white font-semibold text-sm">Scenario Simulator</span>
-        <div className="flex-1" />
-        <span
-          className="text-xs px-2 py-1 rounded"
-          style={{ background: 'rgba(245,158,11,0.15)', border: '1px solid rgba(245,158,11,0.3)', color: '#fbbf24' }}
-        >
-          Illustrative model — not a forecast
-        </span>
-      </div>
+      <NavBar />
 
       {/* ── Body ────────────────────────────────────────────────────────── */}
       <div className="flex flex-1 overflow-hidden">
@@ -165,6 +138,15 @@ export default function ScenariosPage() {
           className="flex-shrink-0 w-80 flex flex-col overflow-y-auto"
           style={{ borderRight: '1px solid rgba(255,255,255,0.07)' }}
         >
+          <div className="px-4 pt-3 pb-0">
+            <div
+              className="text-xs px-2.5 py-1.5 rounded-lg w-full text-center"
+              style={{ background: 'rgba(245,158,11,0.1)', border: '1px solid rgba(245,158,11,0.2)', color: '#fbbf24' }}
+            >
+              Illustrative model — not a forecast
+            </div>
+          </div>
+
           {/* Sliders */}
           <div className="p-4 space-y-5">
             <div className="flex items-center justify-between">
@@ -304,6 +286,7 @@ function SliderRow({
               ? `linear-gradient(to right, ${config.accentColor}80, ${config.accentColor}80 ${((value - config.min) / (config.max - config.min)) * 100}%, rgba(255,255,255,0.1) ${((value - config.min) / (config.max - config.min)) * 100}%)`
               : 'rgba(255,255,255,0.1)',
             accentColor: config.accentColor,
+            height: '4px',
           }}
         />
         <span>{config.formatValue(config.max)}</span>
